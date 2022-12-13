@@ -16,15 +16,14 @@ class PlayerNameViewController: UIViewController {
     @IBOutlet weak var UndoButton: UIButton!
     @IBOutlet weak var AddButton: UIButton!
     
-    var namesAdded = 0
+    var namesAdded=0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         UndoButton.tintColor = UIColor(named: "GhostlyBlue")
         AddButton.tintColor = UIColor(named: "GhostlyBlue")
         NamesList.text = ""
-        //clear in case go back
-        gameSetting.playerList=[]
+        gameSetting.playerList=[] //clear in case go back
     }
     
     func randomizeRoles(){
@@ -63,9 +62,9 @@ class PlayerNameViewController: UIViewController {
         }
         
         //assign team mafia for mafia
-        for i in 0...(gameSetting.numOfPlayers-1){
-            if gameSetting.playerList[i].role == "Mafia"{
-                gameSetting.playerList[i].teamMafia = true
+        for player in gameSetting.playerList{
+            if player.role == "Mafia"{
+                player.teamMafia = true
             }
         }
     }
@@ -95,6 +94,7 @@ class PlayerNameViewController: UIViewController {
             return;
         }
     }
+    
     @IBAction func PressAdd(_ sender: Any) {
         //if the label is next, segue and don't try to add name
         if(AddButton.titleLabel?.text == "Next"){
@@ -128,7 +128,7 @@ class PlayerNameViewController: UIViewController {
         //TODO: scroll if too many names?
         var namesList = ""
         for player in gameSetting.playerList{
-            namesList.append("\n \(player.name ?? "error")")
+            namesList.append("\n \(player.name)")
         }
         NamesList.text=namesList;
     }
