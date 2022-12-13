@@ -15,6 +15,8 @@
 		C6633B97294807EB0085E7B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6633B95294807EB0085E7B8 /* LaunchScreen.storyboard */; };
 		C6633BA129480D450085E7B8 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6633BA029480D450085E7B8 /* HomePageViewController.swift */; };
 		C6633BA3294811F50085E7B8 /* THE MURDER.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6633BA2294811F50085E7B8 /* THE MURDER.ttf */; };
+		C6633BA529481C830085E7B8 /* GameSettingsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6633BA429481C830085E7B8 /* GameSettingsPageViewController.swift */; };
+		C6633BA729481CC80085E7B8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6633BA629481CC80085E7B8 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		C6633B98294807EB0085E7B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6633BA029480D450085E7B8 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		C6633BA2294811F50085E7B8 /* THE MURDER.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THE MURDER.ttf"; sourceTree = "<group>"; };
+		C6633BA429481C830085E7B8 /* GameSettingsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsPageViewController.swift; sourceTree = "<group>"; };
+		C6633BA629481CC80085E7B8 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +72,9 @@
 				C6633B95294807EB0085E7B8 /* LaunchScreen.storyboard */,
 				C6633B98294807EB0085E7B8 /* Info.plist */,
 				C6633BA029480D450085E7B8 /* HomePageViewController.swift */,
+				C6633BA429481C830085E7B8 /* GameSettingsPageViewController.swift */,
 				C6633BA2294811F50085E7B8 /* THE MURDER.ttf */,
+				C6633BA629481CC80085E7B8 /* Player.swift */,
 			);
 			path = "Mafia-Moderator";
 			sourceTree = "<group>";
@@ -149,6 +155,8 @@
 				C6633B8B294807E90085E7B8 /* AppDelegate.swift in Sources */,
 				C6633BA129480D450085E7B8 /* HomePageViewController.swift in Sources */,
 				C6633B8D294807E90085E7B8 /* SceneDelegate.swift in Sources */,
+				C6633BA729481CC80085E7B8 /* Player.swift in Sources */,
+				C6633BA529481C830085E7B8 /* GameSettingsPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

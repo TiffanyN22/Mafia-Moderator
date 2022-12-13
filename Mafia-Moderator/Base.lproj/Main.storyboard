@@ -87,35 +87,196 @@ and deception</string>
             </objects>
             <point key="canvasLocation" x="-11.450381679389313" y="2.8169014084507045"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Settings-->
         <scene sceneID="F7v-29-2KA">
             <objects>
-                <viewController id="QZo-Ep-7tO" sceneMemberID="viewController">
+                <viewController title="Game Settings" id="QZo-Ep-7tO" customClass="GameSettingsPageViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0xb-OP-hNO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="GWk-Fa-D3t">
+                                <rect key="frame" x="283" y="303" width="94" height="32"/>
+                                <color key="backgroundColor" name="GhostlyCyan"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="updatePlayerNum:" destination="QZo-Ep-7tO" eventType="valueChanged" id="hTt-SH-XuA"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="DG9-6r-tVC">
+                                <rect key="frame" x="283" y="359" width="94" height="32"/>
+                                <color key="backgroundColor" name="GhostlyCyan"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="updateMafiaNum:" destination="QZo-Ep-7tO" eventType="valueChanged" id="kh0-cp-Mye"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="bQH-3X-aJ3">
+                                <rect key="frame" x="283" y="415" width="94" height="32"/>
+                                <color key="backgroundColor" name="GhostlyCyan"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="updateDetectiveNum:" destination="QZo-Ep-7tO" eventType="valueChanged" id="IFM-0i-PnV"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="8AB-mm-sgn">
+                                <rect key="frame" x="283" y="471" width="94" height="32"/>
+                                <color key="backgroundColor" name="GhostlyCyan"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="updateNurseNum:" destination="QZo-Ep-7tO" eventType="valueChanged" id="p6g-MO-rl2"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Number of Civilians: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ame-NS-JFD">
+                                <rect key="frame" x="16" y="303" width="267" height="32"/>
+                                <color key="backgroundColor" red="0.56464103460000004" green="0.75632149360000001" blue="0.84494670969999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="h9p-MD-wU2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Number of Mafia: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E1-84-gpU">
+                                <rect key="frame" x="16" y="359" width="267" height="32"/>
+                                <color key="backgroundColor" red="0.56464103460000004" green="0.75632149360000001" blue="0.84494670969999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="bh0-Nb-7Hz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Number of Detectives: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3L-nk-j0c">
+                                <rect key="frame" x="16" y="415" width="267" height="32"/>
+                                <color key="backgroundColor" red="0.56464103460000004" green="0.75632149360000001" blue="0.84494670969999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="3aa-U0-zbT"/>
+                                    <constraint firstAttribute="height" constant="32" id="R0R-cs-kJg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Number of Nurses: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73c-u4-5Oj">
+                                <rect key="frame" x="16" y="471" width="267" height="32"/>
+                                <color key="backgroundColor" red="0.56464103460000004" green="0.75632149360000001" blue="0.84494670969999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="YNI-6d-5Ls"/>
+                                    <constraint firstAttribute="height" constant="32" id="dcp-TU-LWg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Settings" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5v-l9-fKi">
+                                <rect key="frame" x="23" y="134" width="346" height="54"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                <color key="textColor" name="GhostlyBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="r7f-Gy-l2g">
+                                <rect key="frame" x="143.66666666666666" y="683" width="105.66666666666666" height="50.666666666666629"/>
+                                <color key="tintColor" name="GhostlyBlue"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Done" cornerStyle="small">
+                                    <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="29"/>
+                                    <color key="baseForegroundColor" name="Maroon"/>
+                                    <color key="baseBackgroundColor" name="GhostlyBlue"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="tvj-Bl-6CO" kind="show" id="ydt-49-iBH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the number of people tied into this Mafia scheme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JY-xC-vpf">
+                                <rect key="frame" x="-123" y="210" width="639" height="25"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <color key="textColor" name="GhostlyCyan"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="J0c-La-emX"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Maroon"/>
+                        <constraints>
+                            <constraint firstItem="GWk-Fa-D3t" firstAttribute="leading" secondItem="ame-NS-JFD" secondAttribute="trailing" id="0o9-1u-Ono"/>
+                            <constraint firstItem="DG9-6r-tVC" firstAttribute="top" secondItem="GWk-Fa-D3t" secondAttribute="bottom" constant="24" id="2iZ-Ij-5IF"/>
+                            <constraint firstItem="B5v-l9-fKi" firstAttribute="leading" secondItem="J0c-La-emX" secondAttribute="leading" constant="23" id="5r2-DI-cHR"/>
+                            <constraint firstItem="J0c-La-emX" firstAttribute="trailing" secondItem="B5v-l9-fKi" secondAttribute="trailing" constant="24" id="8g1-k8-L01"/>
+                            <constraint firstItem="DG9-6r-tVC" firstAttribute="leading" secondItem="6E1-84-gpU" secondAttribute="trailing" id="Eq9-A2-Pln"/>
+                            <constraint firstItem="ame-NS-JFD" firstAttribute="top" secondItem="9JY-xC-vpf" secondAttribute="bottom" constant="68" id="NiG-H3-xKm"/>
+                            <constraint firstItem="GWk-Fa-D3t" firstAttribute="top" secondItem="9JY-xC-vpf" secondAttribute="bottom" constant="68" id="NrL-B9-u3l"/>
+                            <constraint firstItem="y3L-nk-j0c" firstAttribute="top" secondItem="6E1-84-gpU" secondAttribute="bottom" constant="24" id="PZk-cE-ljV"/>
+                            <constraint firstItem="73c-u4-5Oj" firstAttribute="top" secondItem="y3L-nk-j0c" secondAttribute="bottom" constant="24" id="Qa5-ZX-pVu"/>
+                            <constraint firstItem="r7f-Gy-l2g" firstAttribute="top" secondItem="73c-u4-5Oj" secondAttribute="bottom" constant="180" id="RQ0-6M-gKA"/>
+                            <constraint firstItem="J0c-La-emX" firstAttribute="trailing" secondItem="GWk-Fa-D3t" secondAttribute="trailing" constant="16" id="RWV-vI-8cS"/>
+                            <constraint firstItem="r7f-Gy-l2g" firstAttribute="centerX" secondItem="J0c-La-emX" secondAttribute="centerX" id="Y4F-Lx-Rc1"/>
+                            <constraint firstItem="8AB-mm-sgn" firstAttribute="leading" secondItem="73c-u4-5Oj" secondAttribute="trailing" id="aij-de-8JD"/>
+                            <constraint firstItem="J0c-La-emX" firstAttribute="trailing" secondItem="8AB-mm-sgn" secondAttribute="trailing" constant="16" id="apS-au-u0H"/>
+                            <constraint firstItem="9JY-xC-vpf" firstAttribute="centerX" secondItem="J0c-La-emX" secondAttribute="centerX" id="asQ-By-BFo"/>
+                            <constraint firstItem="J0c-La-emX" firstAttribute="trailing" secondItem="bQH-3X-aJ3" secondAttribute="trailing" constant="16" id="bbq-oB-vb4"/>
+                            <constraint firstItem="6E1-84-gpU" firstAttribute="top" secondItem="ame-NS-JFD" secondAttribute="bottom" constant="24" id="btc-Me-GzB"/>
+                            <constraint firstItem="bQH-3X-aJ3" firstAttribute="leading" secondItem="y3L-nk-j0c" secondAttribute="trailing" id="cdV-3c-zHs"/>
+                            <constraint firstItem="6E1-84-gpU" firstAttribute="leading" secondItem="J0c-La-emX" secondAttribute="leading" constant="16" id="cuw-ty-284"/>
+                            <constraint firstItem="bQH-3X-aJ3" firstAttribute="top" secondItem="DG9-6r-tVC" secondAttribute="bottom" constant="24" id="fzz-av-Jfl"/>
+                            <constraint firstItem="9JY-xC-vpf" firstAttribute="top" secondItem="B5v-l9-fKi" secondAttribute="bottom" constant="22" id="hCD-r5-kQR"/>
+                            <constraint firstItem="GWk-Fa-D3t" firstAttribute="leading" secondItem="J0c-La-emX" secondAttribute="leading" constant="283" id="j9j-Xg-RGL"/>
+                            <constraint firstItem="73c-u4-5Oj" firstAttribute="leading" secondItem="J0c-La-emX" secondAttribute="leading" constant="16" id="jrn-8w-je0"/>
+                            <constraint firstItem="B5v-l9-fKi" firstAttribute="centerX" secondItem="J0c-La-emX" secondAttribute="centerX" id="kFB-tq-Eax"/>
+                            <constraint firstItem="ame-NS-JFD" firstAttribute="leading" secondItem="J0c-La-emX" secondAttribute="leading" constant="16" id="lBj-JY-oMI"/>
+                            <constraint firstItem="8AB-mm-sgn" firstAttribute="top" secondItem="bQH-3X-aJ3" secondAttribute="bottom" constant="24" id="ofd-c3-DRb"/>
+                            <constraint firstItem="B5v-l9-fKi" firstAttribute="top" secondItem="J0c-La-emX" secondAttribute="top" constant="31" id="pfl-lr-WKD"/>
+                            <constraint firstItem="y3L-nk-j0c" firstAttribute="leading" secondItem="J0c-La-emX" secondAttribute="leading" constant="16" id="ykL-VE-nU1"/>
+                            <constraint firstItem="J0c-La-emX" firstAttribute="trailing" secondItem="DG9-6r-tVC" secondAttribute="trailing" constant="16" id="zHE-PR-g2b"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gQy-2u-YWp"/>
+                    <connections>
+                        <outlet property="DoneButton" destination="r7f-Gy-l2g" id="zg1-vP-7WS"/>
+                        <outlet property="GameSettingsTitleText" destination="B5v-l9-fKi" id="RCL-jx-2xx"/>
+                        <outlet property="NumOfCivilianStepper" destination="GWk-Fa-D3t" id="PBY-PB-DAJ"/>
+                        <outlet property="NumOfDetectiveStepper" destination="bQH-3X-aJ3" id="gfZ-bg-lcg"/>
+                        <outlet property="NumOfDetectiveText" destination="y3L-nk-j0c" id="dWe-bm-fCB"/>
+                        <outlet property="NumOfMafiaStepper" destination="DG9-6r-tVC" id="r2g-Vt-wYZ"/>
+                        <outlet property="NumOfMafiaText" destination="6E1-84-gpU" id="HMI-uE-DXC"/>
+                        <outlet property="NumOfNurseStepper" destination="8AB-mm-sgn" id="I5S-Ex-JXc"/>
+                        <outlet property="NumOfNurseText" destination="73c-u4-5Oj" id="xBQ-Fe-QTp"/>
+                        <outlet property="NumofCivilianText" destination="ame-NS-JFD" id="iaz-hZ-HPS"/>
+                        <outlet property="SubtitleText" destination="9JY-xC-vpf" id="XGK-nH-ZkY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xkX-x0-KeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="770" y="3"/>
+            <point key="canvasLocation" x="768.70229007633588" y="2.8169014084507045"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="B2r-cg-agf">
+            <objects>
+                <viewController id="tvj-Bl-6CO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fKs-1P-aJo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="O53-Hj-izc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="orE-YY-zks"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2T-Bo-cDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1648" y="24"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="GhostlyBlue">
-            <color red="0.60784316059999999" green="0.69803923369999998" blue="0.87843137979999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.60784313725490191" green="0.69803921568627447" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="GhostlyCyan">
-            <color red="0.46666663889999999" green="0.61960786580000005" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.46666666666666667" green="0.61960784313725492" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="Maroon">
-            <color red="0.41960784313725491" green="0.098039215686274508" blue="0.19215686274509805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.41999998688697815" green="0.097999997437000275" blue="0.19200000166893005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Navy">
-            <color red="0.074509806930000005" green="0.035294115539999997" blue="0.31372550129999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.075000002980232239" green="0.035000000149011612" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

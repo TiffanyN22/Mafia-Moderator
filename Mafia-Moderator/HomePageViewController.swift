@@ -1,8 +1,9 @@
 //
-//  HomePageViewController.swift
-//  Mafia-Moderator
-//
-//  Created by Tiffany Nguyen on 12/12/22.
+//  File Name: HomePageViewController.swift
+//  Project: Mafia-Moderator
+//  Description: Basic home page with title text and button to go to next page
+//  Author: Tiffany Nguyen
+//  Creation Date: 12/12/22
 //
 
 import UIKit
@@ -25,16 +26,4 @@ class HomePageViewController: UIViewController {
         
         PlayNowButton.titleLabel?.text = "Play Now"
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-    }
-    */
-
 }
