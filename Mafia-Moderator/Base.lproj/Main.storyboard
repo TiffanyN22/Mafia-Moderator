@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KiE-X1-NFe">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="wP9-2P-ma5">
+            <objects>
+                <navigationController id="KiE-X1-NFe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bfg-K2-qJ5">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yed-lR-nI6" kind="relationship" relationship="rootViewController" id="hPg-gH-ujY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14I-ge-sj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-775" y="3"/>
+        </scene>
+        <!--Home Page-->
+        <scene sceneID="viz-u1-aSD">
+            <objects>
+                <viewController title="Home Page" id="yed-lR-nI6" customClass="HomePageViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2hc-tW-FWH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mafia Moderator" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA4-0r-fhX">
+                                <rect key="frame" x="16" y="188" width="344" height="64"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="50"/>
+                                <color key="textColor" name="GhostlyBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgp-rs-jk7">
+                                <rect key="frame" x="26" y="287" width="341" height="85"/>
+                                <string key="text">The ultimate game of murder 
+and deception</string>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <color key="textColor" name="GhostlyCyan"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sQd-ha-XAu">
+                                <rect key="frame" x="103" y="398" width="171" height="56"/>
+                                <color key="tintColor" name="GhostlyBlue"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Play Now" cornerStyle="small">
+                                    <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Maroon"/>
+                                    <color key="baseBackgroundColor" name="GhostlyBlue"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="QZo-Ep-7tO" kind="show" id="lE0-tI-ANQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YF7-WQ-8Q4"/>
+                        <color key="backgroundColor" name="Navy"/>
+                        <color key="tintColor" red="0.42352938649999999" green="0.098039209840000002" blue="0.19215688110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="wgp-rs-jk7" firstAttribute="leading" secondItem="YF7-WQ-8Q4" secondAttribute="leading" constant="58" id="0Pe-e6-gTV"/>
+                            <constraint firstItem="wgp-rs-jk7" firstAttribute="top" secondItem="hA4-0r-fhX" secondAttribute="bottom" constant="35" id="Qrs-ix-TuA"/>
+                            <constraint firstItem="sQd-ha-XAu" firstAttribute="top" secondItem="wgp-rs-jk7" secondAttribute="bottom" constant="26" id="e4d-PK-482"/>
+                            <constraint firstItem="YF7-WQ-8Q4" firstAttribute="trailing" secondItem="sQd-ha-XAu" secondAttribute="trailing" constant="119" id="h5Z-YL-Ro0"/>
+                            <constraint firstItem="YF7-WQ-8Q4" firstAttribute="trailing" secondItem="wgp-rs-jk7" secondAttribute="trailing" constant="59" id="jGt-nb-uXc"/>
+                            <constraint firstItem="hA4-0r-fhX" firstAttribute="top" secondItem="YF7-WQ-8Q4" secondAttribute="top" constant="88" id="kFR-qt-Ysc"/>
+                            <constraint firstItem="YF7-WQ-8Q4" firstAttribute="trailing" secondItem="hA4-0r-fhX" secondAttribute="trailing" constant="33" id="oeY-Nd-GyG"/>
+                            <constraint firstItem="sQd-ha-XAu" firstAttribute="leading" secondItem="YF7-WQ-8Q4" secondAttribute="leading" constant="103" id="r8k-At-E0y"/>
+                            <constraint firstItem="hA4-0r-fhX" firstAttribute="leading" secondItem="YF7-WQ-8Q4" secondAttribute="leading" constant="16" id="uxF-gM-W5f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="c4v-t8-GHa"/>
+                    <connections>
+                        <outlet property="PlayNowButton" destination="sQd-ha-XAu" id="y8A-wi-hAc"/>
+                        <outlet property="SubtitleText" destination="wgp-rs-jk7" id="nqr-Lr-L0z"/>
+                        <outlet property="TitleText" destination="hA4-0r-fhX" id="taH-S7-B2l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WVt-Gr-NrC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11.450381679389313" y="2.8169014084507045"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F7v-29-2KA">
+            <objects>
+                <viewController id="QZo-Ep-7tO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0xb-OP-hNO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="J0c-La-emX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gQy-2u-YWp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xkX-x0-KeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="GhostlyBlue">
+            <color red="0.60784316059999999" green="0.69803923369999998" blue="0.87843137979999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="GhostlyCyan">
+            <color red="0.46666663889999999" green="0.61960786580000005" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Maroon">
+            <color red="0.41960784313725491" green="0.098039215686274508" blue="0.19215686274509805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Navy">
+            <color red="0.074509806930000005" green="0.035294115539999997" blue="0.31372550129999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
