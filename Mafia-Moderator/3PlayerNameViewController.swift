@@ -1,8 +1,10 @@
 //
-//  PlayerNameViewController.swift
-//  Mafia-Moderator
-//
-//  Created by Tiffany Nguyen on 12/13/22.
+//  File Name: PlayerNameViewController.swift
+//  Project: Mafia-Moderator
+//  Description: The file allows the user to enter in names for all players and randomly assigns their role
+//  Author: Tiffany Nguyen
+//  Acknowledgement: Logic for Fisher-Yates shuffle algorithm code came from https://www.w3docs.com/snippets/javascript/how-to-randomize-shuffle-a-javascript-array.html
+//  Creation Date: 12/13/22.
 //
 
 import UIKit
@@ -26,7 +28,50 @@ class PlayerNameViewController: UIViewController {
     }
     
     func randomizeRoles(){
-        //TODO:
+        //start off by assigning roles in order
+        if(gameSetting.numOfCivilian>0){
+            for i in 0...(gameSetting.numOfCivilian-1) {
+                gameSetting.playerList[i].role = "Civilian"
+            }
+        }
+        if(gameSetting.numOfDetective>0){
+            for i in 0...(gameSetting.numOfDetective-1) {
+                gameSetting.playerList[gameSetting.numOfCivilian + i].role = "Detective"
+            }
+        }
+        if(gameSetting.numOfNurse>0){
+            for i in 0...(gameSetting.numOfNurse-1) {
+                gameSetting.playerList[gameSetting.numOfCivilian + gameSetting.numOfDetective + i].role = "Nurse"
+            }
+        }
+        if(gameSetting.numOfMafia>0){
+            for i in 0...(gameSetting.numOfMafia-1) {
+                gameSetting.playerList[gameSetting.numOnTeamTown + i].role = "Mafia"
+            }
+        }
+        
+        //shuffle using Fisher-Yates shuffle algorithm
+        var curId = gameSetting.playerList.count
+        while(curId != 0){
+            //pick remaining element
+            let randomIndex = Int.random(in: 0...(curId-1))
+            curId-=1
+            //swap
+            let temp = gameSetting.playerList[curId].role
+            gameSetting.playerList[curId].role=gameSetting.playerList[randomIndex].role
+            gameSetting.playerList[randomIndex].role=temp
+        }
+        
+        //assign team mafia for mafia
+        for i in 0...(gameSetting.numOfPlayers-1){
+            if gameSetting.playerList[i].role == "Mafia"{
+                gameSetting.playerList[i].teamMafia = true
+            }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        randomizeRoles()
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {

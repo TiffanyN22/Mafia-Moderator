@@ -58,8 +58,8 @@ class GameSettingsPageViewController: UIViewController {
         gameSetting.numOfMafia=Int(NumOfMafiaStepper.value)
         gameSetting.numOfDetective=Int(NumOfDetectiveStepper.value)
         gameSetting.numOfNurse=Int(NumOfNurseStepper.value)
-        gameSetting.numOnTeamTown=gameSetting.numOfCivilian!+gameSetting.numOfDetective!+gameSetting.numOfNurse!
-        gameSetting.numOfPlayers=gameSetting.numOnTeamTown!+gameSetting.numOfMafia!
+        gameSetting.numOnTeamTown=gameSetting.numOfCivilian+gameSetting.numOfDetective+gameSetting.numOfNurse
+        gameSetting.numOfPlayers=gameSetting.numOnTeamTown+gameSetting.numOfMafia
         
     }
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {

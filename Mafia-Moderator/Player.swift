@@ -9,10 +9,10 @@
 import UIKit
 
 class Player: NSObject {
-    var name: String?
-    var role: String? //Mafia, Nurse, Detective, or Civilian
-    var teamMafia: Bool? //true = mafia team, false = civilian team
-    var alive: Bool?
+    var name: String=""
+    var role: String="" //Mafia, Nurse, Detective, or Civilian
+    var teamMafia: Bool=false //true = mafia team, false = civilian team
+    var alive: Bool=true
     
     init(name: String){
         self.name = name
@@ -20,12 +20,12 @@ class Player: NSObject {
 }
 
 class gameSetting: NSObject {
-    static var numOfCivilian: Int?
-    static var numOfMafia: Int?
-    static var numOfDetective: Int?
-    static var numOfNurse: Int?
-    static var numOnTeamTown: Int?
-    static var numOfPlayers: Int?
+    static var numOfCivilian: Int=0
+    static var numOfMafia: Int=0
+    static var numOfDetective: Int=0
+    static var numOfNurse: Int=0
+    static var numOnTeamTown: Int=0
+    static var numOfPlayers: Int=0
     
     static var playerList: [Player]=[]
 }

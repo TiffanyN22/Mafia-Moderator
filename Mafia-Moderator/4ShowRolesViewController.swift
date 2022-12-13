@@ -9,9 +9,15 @@ import UIKit
 
 class ShowRolesViewController: UIViewController {
 
+    @IBOutlet weak var RolesDisplay: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        var text=""
+        for i in 0...(gameSetting.numOfPlayers-1){
+            text.append("\n \(gameSetting.playerList[i].name): \(gameSetting.playerList[i].role)")
+        }
+        RolesDisplay.text=text
         // Do any additional setup after loading the view.
     }
     

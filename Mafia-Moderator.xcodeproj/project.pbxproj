@@ -18,7 +18,7 @@
 		C6633BA529481C830085E7B8 /* 2GameSettingsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6633BA429481C830085E7B8 /* 2GameSettingsPageViewController.swift */; };
 		C6633BA729481CC80085E7B8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6633BA629481CC80085E7B8 /* Player.swift */; };
 		C6883F7E294920D800AFD524 /* 3PlayerNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6883F7D294920D800AFD524 /* 3PlayerNameViewController.swift */; };
-		C6883F8029492D4000AFD524 /* ShowRolesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6883F7F29492D4000AFD524 /* ShowRolesViewController.swift */; };
+		C6883F8029492D4000AFD524 /* 4ShowRolesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6883F7F29492D4000AFD524 /* 4ShowRolesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		C6633BA429481C830085E7B8 /* 2GameSettingsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2GameSettingsPageViewController.swift; sourceTree = "<group>"; };
 		C6633BA629481CC80085E7B8 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		C6883F7D294920D800AFD524 /* 3PlayerNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3PlayerNameViewController.swift; sourceTree = "<group>"; };
-		C6883F7F29492D4000AFD524 /* ShowRolesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRolesViewController.swift; sourceTree = "<group>"; };
+		C6883F7F29492D4000AFD524 /* 4ShowRolesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4ShowRolesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +78,9 @@
 				C6633BA029480D450085E7B8 /* 1HomePageViewController.swift */,
 				C6633BA429481C830085E7B8 /* 2GameSettingsPageViewController.swift */,
 				C6883F7D294920D800AFD524 /* 3PlayerNameViewController.swift */,
+				C6883F7F29492D4000AFD524 /* 4ShowRolesViewController.swift */,
 				C6633BA2294811F50085E7B8 /* THE MURDER.ttf */,
 				C6633BA629481CC80085E7B8 /* Player.swift */,
-				C6883F7F29492D4000AFD524 /* ShowRolesViewController.swift */,
 			);
 			path = "Mafia-Moderator";
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 				C6633BA129480D450085E7B8 /* 1HomePageViewController.swift in Sources */,
 				C6883F7E294920D800AFD524 /* 3PlayerNameViewController.swift in Sources */,
 				C6633B8D294807E90085E7B8 /* SceneDelegate.swift in Sources */,
-				C6883F8029492D4000AFD524 /* ShowRolesViewController.swift in Sources */,
+				C6883F8029492D4000AFD524 /* 4ShowRolesViewController.swift in Sources */,
 				C6633BA729481CC80085E7B8 /* Player.swift in Sources */,
 				C6633BA529481C830085E7B8 /* 2GameSettingsPageViewController.swift in Sources */,
 			);

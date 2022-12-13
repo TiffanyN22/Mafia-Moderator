@@ -363,17 +363,37 @@ and deception</string>
             </objects>
             <point key="canvasLocation" x="1646.5648854961833" y="23.943661971830988"/>
         </scene>
-        <!--View Controller-->
+        <!--Show Roles View Controller-->
         <scene sceneID="GQl-0V-kxb">
             <objects>
-                <viewController id="3a9-Bd-MvH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DisplayRoles" id="3a9-Bd-MvH" customClass="ShowRolesViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZBg-Am-vgy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Names" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9T-zT-0l6">
+                                <rect key="frame" x="46" y="206" width="301" height="330"/>
+                                <color key="backgroundColor" name="GhostlyBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="301" id="d7b-hJ-sk5"/>
+                                    <constraint firstAttribute="height" constant="330" id="vmX-4M-suM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" name="Navy"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dNC-Yw-BeB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z9T-zT-0l6" firstAttribute="centerX" secondItem="dNC-Yw-BeB" secondAttribute="centerX" id="Oqw-Fr-Y5q"/>
+                            <constraint firstItem="z9T-zT-0l6" firstAttribute="top" secondItem="dNC-Yw-BeB" secondAttribute="top" constant="103" id="yhc-kg-Po8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3LC-kU-GL5"/>
+                    <connections>
+                        <outlet property="RolesDisplay" destination="z9T-zT-0l6" id="nJH-nQ-L7Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPo-Gi-nqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
