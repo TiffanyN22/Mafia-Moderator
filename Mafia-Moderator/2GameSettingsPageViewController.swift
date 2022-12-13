@@ -3,6 +3,7 @@
 //  Project: Mafia-Moderator
 //  Description: Settings page to decide number of mafia, civilians, detectives, and nurses
 //  Author: Tiffany Nguyen
+//  Acknowledgement: Logic for validation alerts came from https://youtu.be/_LtGwrkXigQ
 //  Creation Date: 12/12/22
 //
 
@@ -57,12 +58,12 @@ class GameSettingsPageViewController: UIViewController {
         gameSetting.numOfMafia=Int(NumOfMafiaStepper.value)
         gameSetting.numOfDetective=Int(NumOfDetectiveStepper.value)
         gameSetting.numOfNurse=Int(NumOfNurseStepper.value)
-        gameSetting.numOnTeamTown=gameSetting.numOfCivilian!+gameSetting.numOfMafia!+gameSetting.numOfNurse!
+        gameSetting.numOnTeamTown=gameSetting.numOfCivilian!+gameSetting.numOfDetective!+gameSetting.numOfNurse!
         gameSetting.numOfPlayers=gameSetting.numOnTeamTown!+gameSetting.numOfMafia!
         
     }
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        var numOfPlayers = NumOfCivilianStepper.value + NumOfMafiaStepper.value + NumOfDetectiveStepper.value + NumOfNurseStepper.value
+        let numOfPlayers = NumOfCivilianStepper.value + NumOfMafiaStepper.value + NumOfDetectiveStepper.value + NumOfNurseStepper.value
         //check more than 3 player
         if numOfPlayers <= 3{
             let alertController = UIAlertController(title: "Too Few Players", message: "There must be at least 4 players to begin game", preferredStyle: .alert)
