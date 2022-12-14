@@ -20,6 +20,7 @@ class DetectiveNightPhaseViewController: UIViewController {
         
         PlayerSelector.delegate = self
         PlayerSelector.dataSource = self
+        PlayerSelector.setValue(UIColor(named: "Navy")!, forKeyPath: "textColor")
         
         SuspectTeamDisplay.isHidden = true
         
@@ -38,7 +39,14 @@ class DetectiveNightPhaseViewController: UIViewController {
         
         //display suspect info
         SuspectTeamDisplay.isHidden = false
-        SuspectTeamDisplay.text = "\(gameSetting.alivePlayerList[selection].name) is a \(gameSetting.alivePlayerList[selection].role)"
+        if(gameSetting.alivePlayerList[selection].teamMafia){
+            SuspectTeamDisplay.text = "\(gameSetting.alivePlayerList[selection].name) is a Mafia"
+            SuspectTeamDisplay.textColor = UIColor(named: "Maroon")!
+        } else{
+            SuspectTeamDisplay.text = "\(gameSetting.alivePlayerList[selection].name) is not a Mafia"
+            SuspectTeamDisplay.textColor = UIColor(named: "Navy")!
+        }
+        
         
         //change button text (so that it goes to next page)
         ConfirmDecisionButton.setTitle("Next", for: .normal)

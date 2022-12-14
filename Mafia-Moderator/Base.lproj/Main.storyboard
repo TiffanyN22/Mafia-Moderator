@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -492,7 +491,7 @@ and deception</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wf7-dg-QfF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3351.9083969465646" y="2.8169014084507045"/>
+            <point key="canvasLocation" x="3309" y="3"/>
         </scene>
         <!--Detective Night Phase-->
         <scene sceneID="YgS-Jj-K5E">
@@ -578,21 +577,91 @@ and deception</string>
             </objects>
             <point key="canvasLocation" x="4180.9160305343512" y="2.8169014084507045"/>
         </scene>
-        <!--View Controller-->
+        <!--NurseNightPhase-->
         <scene sceneID="lRD-Zw-qMC">
             <objects>
-                <viewController id="dRl-HY-reN" sceneMemberID="viewController">
+                <viewController title="NurseNightPhase" id="dRl-HY-reN" customClass="NurseNightPhaseViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hCn-ra-3Sa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have the power to save one person - will you choose the choose the correct soul?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEw-jj-NLq">
+                                <rect key="frame" x="34" y="215" width="325" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="325" id="Sba-Od-0Wf"/>
+                                    <constraint firstAttribute="height" constant="125" id="uKW-1C-Rho"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <color key="textColor" name="CyanAccent"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kme-qn-UQr">
+                                <rect key="frame" x="36.666666666666657" y="370" width="320" height="216"/>
+                                <color key="backgroundColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aof-Gf-Sg1">
+                                <rect key="frame" x="87.666666666666686" y="670" width="218" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="JW9-w5-Hed"/>
+                                    <constraint firstAttribute="height" constant="81" id="uQP-vU-nc3"/>
+                                </constraints>
+                                <color key="tintColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Confirm Your Decision">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Maroon"/>
+                                    <color key="baseBackgroundColor" name="CyanAccent"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressedConfirmDecisionButton:" destination="Z6U-U8-tYL" eventType="touchUpInside" id="NqD-89-S6o"/>
+                                    <segue destination="hCs-NX-Mf7" kind="show" id="uUv-zJ-r2j"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nurse" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lF-rw-HOc">
+                                <rect key="frame" x="132" y="153" width="129" height="54"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                <color key="textColor" name="GhostlyBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zDv-SJ-unk"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Navy"/>
+                        <constraints>
+                            <constraint firstItem="kme-qn-UQr" firstAttribute="top" secondItem="WEw-jj-NLq" secondAttribute="bottom" constant="30" id="4cc-OS-Y1L"/>
+                            <constraint firstItem="kme-qn-UQr" firstAttribute="centerX" secondItem="zDv-SJ-unk" secondAttribute="centerX" id="Aos-j4-JF8"/>
+                            <constraint firstItem="zDv-SJ-unk" firstAttribute="bottom" secondItem="aof-Gf-Sg1" secondAttribute="bottom" constant="67" id="EK0-Om-WK8"/>
+                            <constraint firstItem="8lF-rw-HOc" firstAttribute="centerX" secondItem="zDv-SJ-unk" secondAttribute="centerX" id="HIb-Cd-CCz"/>
+                            <constraint firstItem="WEw-jj-NLq" firstAttribute="top" secondItem="8lF-rw-HOc" secondAttribute="bottom" constant="8" symbolic="YES" id="WOG-Z4-9cR"/>
+                            <constraint firstItem="WEw-jj-NLq" firstAttribute="centerX" secondItem="zDv-SJ-unk" secondAttribute="centerX" id="Z6V-oe-DaI"/>
+                            <constraint firstItem="aof-Gf-Sg1" firstAttribute="centerX" secondItem="zDv-SJ-unk" secondAttribute="centerX" id="iZd-qT-790"/>
+                            <constraint firstItem="8lF-rw-HOc" firstAttribute="top" secondItem="zDv-SJ-unk" secondAttribute="top" constant="50" id="kge-df-iC8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fCY-pZ-nVp"/>
+                    <connections>
+                        <outlet property="nurseConfirmDecisionButton" destination="aof-Gf-Sg1" id="fvz-sw-I6X"/>
+                        <outlet property="playerSelector" destination="kme-qn-UQr" id="s0j-4B-ePe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ujb-FJ-ZxQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5021" y="3"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gJQ-4c-94O">
+            <objects>
+                <viewController id="hCs-NX-Mf7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dSy-Jk-dtx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dNR-c1-ZIe"/>
+                        <color key="backgroundColor" name="Maroon"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PjF-Wz-Te6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MGK-qo-pb4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5828" y="3"/>
         </scene>
     </scenes>
     <resources>
@@ -614,8 +683,5 @@ and deception</string>
         <namedColor name="Navy">
             <color red="0.075000002980232239" green="0.035000000149011612" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
