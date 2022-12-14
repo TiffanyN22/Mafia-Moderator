@@ -425,16 +425,6 @@ and deception</string>
             </objects>
             <point key="canvasLocation" x="2467.93893129771" y="2.8169014084507045"/>
         </scene>
-        <!--Hosting Controller-->
-        <scene sceneID="BXm-h5-Jod">
-            <objects>
-                <hostingController id="tvf-Ao-gNs" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Tyj-fM-QDy"/>
-                </hostingController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gOL-jV-IMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2468" y="715"/>
-        </scene>
         <!--Mafia Night Phase View Controller-->
         <scene sceneID="yPm-sO-jQi">
             <objects>
@@ -473,15 +463,12 @@ and deception</string>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="PressAdd:" destination="tvj-Bl-6CO" eventType="touchUpInside" id="kVn-6S-uG6"/>
+                                    <segue destination="Z6U-U8-tYL" kind="show" id="fTX-rl-J9c"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNU-Cv-hFl">
-                                <rect key="frame" x="22" y="396" width="350" height="165"/>
+                                <rect key="frame" x="36.666666666666657" y="393" width="320" height="216"/>
                                 <color key="backgroundColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="GG1-uE-vSy"/>
-                                    <constraint firstAttribute="height" constant="165" id="rOB-5P-8Dq"/>
-                                </constraints>
                             </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P0l-RS-F9E"/>
@@ -491,7 +478,7 @@ and deception</string>
                             <constraint firstItem="BNU-Cv-hFl" firstAttribute="centerX" secondItem="P0l-RS-F9E" secondAttribute="centerX" id="7h2-jz-9Oq"/>
                             <constraint firstItem="O2G-Lm-s1Y" firstAttribute="centerX" secondItem="P0l-RS-F9E" secondAttribute="centerX" id="EmF-rF-WlO"/>
                             <constraint firstItem="y6Q-oR-e2W" firstAttribute="top" secondItem="O2G-Lm-s1Y" secondAttribute="bottom" constant="16" id="b75-jP-Qzg"/>
-                            <constraint firstItem="BNU-Cv-hFl" firstAttribute="top" secondItem="y6Q-oR-e2W" secondAttribute="bottom" constant="58" id="esI-5r-Vgi"/>
+                            <constraint firstItem="BNU-Cv-hFl" firstAttribute="top" secondItem="y6Q-oR-e2W" secondAttribute="bottom" constant="55" id="esI-5r-Vgi"/>
                             <constraint firstItem="qSQ-ip-oRf" firstAttribute="centerX" secondItem="P0l-RS-F9E" secondAttribute="centerX" id="i77-aU-FJW"/>
                             <constraint firstItem="P0l-RS-F9E" firstAttribute="bottom" secondItem="qSQ-ip-oRf" secondAttribute="bottom" constant="65" id="xHs-tc-ydN"/>
                             <constraint firstItem="O2G-Lm-s1Y" firstAttribute="top" secondItem="P0l-RS-F9E" secondAttribute="top" constant="40" id="zjY-cf-Oh8"/>
@@ -507,25 +494,110 @@ and deception</string>
             </objects>
             <point key="canvasLocation" x="3351.9083969465646" y="2.8169014084507045"/>
         </scene>
-        <!--View Controller-->
+        <!--Detective Night Phase-->
         <scene sceneID="YgS-Jj-K5E">
             <objects>
-                <viewController id="Z6U-U8-tYL" sceneMemberID="viewController">
+                <viewController title="Detective Night Phase" id="Z6U-U8-tYL" customClass="DetectiveNightPhaseViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uaZ-n4-FGD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detective" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lc-1N-EZR">
+                                <rect key="frame" x="90" y="148" width="213" height="54"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                <color key="textColor" name="GhostlyBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNS-Fp-nQ8">
+                                <rect key="frame" x="36.666666666666657" y="353" width="320" height="216"/>
+                                <color key="backgroundColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgO-8p-JXn">
+                                <rect key="frame" x="87.666666666666686" y="687" width="218" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="ath-9Z-fMA"/>
+                                    <constraint firstAttribute="height" constant="81" id="ouS-hy-Zt6"/>
+                                </constraints>
+                                <color key="tintColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Confirm Your Decision">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Maroon"/>
+                                    <color key="baseBackgroundColor" name="CyanAccent"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressedConfirmDecisionButton:" destination="Z6U-U8-tYL" eventType="touchUpInside" id="1xD-Ca-agU"/>
+                                    <segue destination="dRl-HY-reN" kind="show" id="TZk-3d-Pej"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Like it or not, everyone around you is a suspect: who will you choose to investigate?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fko-s4-wwI">
+                                <rect key="frame" x="34" y="210" width="325" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="CjZ-oJ-KgQ"/>
+                                    <constraint firstAttribute="width" constant="325" id="Z5r-ZD-gVc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <color key="textColor" name="CyanAccent"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suspect  Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAX-Cu-vgP">
+                                <rect key="frame" x="36.666666666666657" y="588" width="320" height="80"/>
+                                <color key="backgroundColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Ewo-vg-YCS"/>
+                                    <constraint firstAttribute="height" constant="80" id="xYS-Ta-ogf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
+                                <color key="textColor" name="Navy"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="k9R-2P-AQt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Navy"/>
+                        <constraints>
+                            <constraint firstItem="PNS-Fp-nQ8" firstAttribute="centerX" secondItem="k9R-2P-AQt" secondAttribute="centerX" id="0Yr-N0-OaZ"/>
+                            <constraint firstItem="Fko-s4-wwI" firstAttribute="top" secondItem="7lc-1N-EZR" secondAttribute="bottom" constant="8" symbolic="YES" id="5CQ-Hm-r4g"/>
+                            <constraint firstItem="tgO-8p-JXn" firstAttribute="centerX" secondItem="k9R-2P-AQt" secondAttribute="centerX" id="KsI-dR-CzL"/>
+                            <constraint firstItem="Fko-s4-wwI" firstAttribute="centerX" secondItem="k9R-2P-AQt" secondAttribute="centerX" id="NjA-LL-5Ol"/>
+                            <constraint firstItem="CAX-Cu-vgP" firstAttribute="top" secondItem="PNS-Fp-nQ8" secondAttribute="bottom" constant="19" id="Ue0-xo-fCR"/>
+                            <constraint firstItem="PNS-Fp-nQ8" firstAttribute="top" secondItem="Fko-s4-wwI" secondAttribute="bottom" constant="18" id="VYA-9k-etX"/>
+                            <constraint firstItem="7lc-1N-EZR" firstAttribute="top" secondItem="k9R-2P-AQt" secondAttribute="top" constant="45" id="Zo8-pS-6op"/>
+                            <constraint firstItem="7lc-1N-EZR" firstAttribute="centerX" secondItem="k9R-2P-AQt" secondAttribute="centerX" id="aH1-2Y-Yb9"/>
+                            <constraint firstItem="k9R-2P-AQt" firstAttribute="bottom" secondItem="tgO-8p-JXn" secondAttribute="bottom" constant="50" id="jgR-2U-QiI"/>
+                            <constraint firstItem="CAX-Cu-vgP" firstAttribute="centerX" secondItem="k9R-2P-AQt" secondAttribute="centerX" id="rLU-Au-sih"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Auc-U2-OOT"/>
+                    <connections>
+                        <outlet property="ConfirmDecisionButton" destination="tgO-8p-JXn" id="PJH-KI-ri1"/>
+                        <outlet property="PlayerSelector" destination="PNS-Fp-nQ8" id="OLe-gg-DL9"/>
+                        <outlet property="SuspectTeamDisplay" destination="CAX-Cu-vgP" id="lop-lY-H8g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DTM-VP-pC2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4182" y="3"/>
+            <point key="canvasLocation" x="4180.9160305343512" y="2.8169014084507045"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lRD-Zw-qMC">
+            <objects>
+                <viewController id="dRl-HY-reN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hCn-ra-3Sa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zDv-SJ-unk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fCY-pZ-nVp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ujb-FJ-ZxQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5021" y="3"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="CyanAccent">
-            <color red="0.5647059083" green="0.75686275960000005" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.56499999761581421" green="0.75700002908706665" blue="0.84299999475479126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="DarkCyan">
             <color red="0.10588235294117647" green="0.22352941176470589" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
