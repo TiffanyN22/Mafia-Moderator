@@ -2,6 +2,7 @@
 //  ShowRolesUI.swift
 //  Mafia-Moderator
 //  Description: Card Flip (with buttons for next/back) for View Roles Page to display player roles
+//  Acknowledgement: Code Logic for Card Flip came from Swift Arcade (https://youtu.be/7rxaRn-XK28)
 //  Created by Tiffany Nguyen on 12/13/22.
 //
 

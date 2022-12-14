@@ -28,5 +28,6 @@ class gameSetting: NSObject {
     static var numOfPlayers: Int=0
     
     static var playerList: [Player]=[]
+    static var alivePlayerList: [Player]=[]
 }
 

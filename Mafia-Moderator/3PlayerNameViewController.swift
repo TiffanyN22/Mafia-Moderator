@@ -71,6 +71,7 @@ class PlayerNameViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         randomizeRoles()
+        gameSetting.alivePlayerList = gameSetting.playerList
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
