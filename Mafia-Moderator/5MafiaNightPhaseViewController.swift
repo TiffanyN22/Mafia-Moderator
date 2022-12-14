@@ -11,6 +11,8 @@ class MafiaNightPhaseViewController: UIViewController{
 
     @IBOutlet weak var mafiaPlayerSelector: UIPickerView!
     @IBOutlet weak var ConfirmDecisionButton: UIButton!
+    
+    var murderAttemptIndex: Int = 0 //selector starts off at position 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +27,16 @@ class MafiaNightPhaseViewController: UIViewController{
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //TODO: pass selected player to page that determines death
+        //pass variables over
+        gameSetting.murderAttemptIndex = self.murderAttemptIndex
+//        if segue.identifier == "showDetail" {
+//                if let indexPath = self.tableView.indexPathForSelectedRow {
+//                    let controller = segue.destination as! ViewControllerB
+//                    controller.selectedName = objects[indexPath.row]
+//                }
+//            }
+//        let step2VC = segue.destination as! NightResultViewController //check destination
+//        step2VC.murderAttemptIndex = self.murderAttemptIndex
     }
 }
 
@@ -33,6 +44,10 @@ class MafiaNightPhaseViewController: UIViewController{
 extension MafiaNightPhaseViewController: UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return gameSetting.alivePlayerList[row].name
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.murderAttemptIndex = row
     }
 }
 

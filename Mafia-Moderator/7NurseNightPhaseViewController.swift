@@ -12,6 +12,8 @@ class NurseNightPhaseViewController: UIViewController {
     @IBOutlet weak var playerSelector: UIPickerView!
     @IBOutlet weak var nurseConfirmDecisionButton: UIButton!
     
+    var saveAttemptIndex: Int = 0 //selector starts off at position 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +23,10 @@ class NurseNightPhaseViewController: UIViewController {
         
         nurseConfirmDecisionButton.titleLabel?.textAlignment = .center
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        gameSetting.saveAttemptIndex = self.saveAttemptIndex
+    }
 }
 
 //for picker view
@@ -30,8 +35,8 @@ extension NurseNightPhaseViewController: UIPickerViewDelegate{
         return gameSetting.alivePlayerList[row].name
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //TODO: pass selected player to next page
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        saveAttemptIndex = row
     }
 }
 

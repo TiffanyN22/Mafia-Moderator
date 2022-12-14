@@ -647,21 +647,40 @@ and deception</string>
             </objects>
             <point key="canvasLocation" x="5021" y="3"/>
         </scene>
-        <!--View Controller-->
+        <!--NightResults-->
         <scene sceneID="gJQ-4c-94O">
             <objects>
-                <viewController id="hCs-NX-Mf7" sceneMemberID="viewController">
+                <viewController title="NightResults" id="hCs-NX-Mf7" customClass="NightResultViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dSy-Jk-dtx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__ was killed during the night" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8h-8j-P1f">
+                                <rect key="frame" x="36.666666666666657" y="265" width="320" height="391"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="391" id="BCk-Yh-Oup"/>
+                                    <constraint firstAttribute="width" constant="320" id="CSL-Vu-vxy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                <color key="textColor" name="GhostlyBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dNR-c1-ZIe"/>
                         <color key="backgroundColor" name="Maroon"/>
+                        <constraints>
+                            <constraint firstItem="W8h-8j-P1f" firstAttribute="centerY" secondItem="dNR-c1-ZIe" secondAttribute="centerY" id="QYN-V7-WCo"/>
+                            <constraint firstItem="W8h-8j-P1f" firstAttribute="centerX" secondItem="dNR-c1-ZIe" secondAttribute="centerX" id="eaF-Qd-aSg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PjF-Wz-Te6"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="W8h-8j-P1f" id="FmQ-FA-JMv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGK-qo-pb4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5828" y="3"/>
+            <point key="canvasLocation" x="5826.7175572519081" y="2.8169014084507045"/>
         </scene>
     </scenes>
     <resources>
