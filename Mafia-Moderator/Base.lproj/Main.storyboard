@@ -33,7 +33,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mafia Moderator" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA4-0r-fhX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mafia Moderator" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA4-0r-fhX">
                                 <rect key="frame" x="16" y="188" width="344" height="64"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="50"/>
                                 <color key="textColor" name="GhostlyBlue"/>
@@ -134,7 +134,7 @@ and deception</string>
                                     <constraint firstAttribute="height" constant="32" id="h9p-MD-wU2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="Navy"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Number of Mafia: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E1-84-gpU">
@@ -144,7 +144,7 @@ and deception</string>
                                     <constraint firstAttribute="height" constant="32" id="bh0-Nb-7Hz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="Navy"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Number of Detectives: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3L-nk-j0c">
@@ -155,7 +155,7 @@ and deception</string>
                                     <constraint firstAttribute="height" constant="32" id="R0R-cs-kJg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="Navy"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Number of Nurses: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73c-u4-5Oj">
@@ -166,7 +166,7 @@ and deception</string>
                                     <constraint firstAttribute="height" constant="32" id="dcp-TU-LWg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="Navy"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Settings" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5v-l9-fKi">
@@ -327,7 +327,7 @@ and deception</string>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="PressAdd:" destination="tvj-Bl-6CO" eventType="touchUpInside" id="aqJ-14-w59"/>
-                                    <segue destination="3a9-Bd-MvH" kind="show" id="qPv-mP-BkC"/>
+                                    <segue destination="3a9-Bd-MvH" kind="show" id="lf8-Nj-a8c"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -361,7 +361,7 @@ and deception</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2T-Bo-cDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1646.5648854961833" y="23.943661971830988"/>
+            <point key="canvasLocation" x="1642" y="3"/>
         </scene>
         <!--Show Roles View Controller-->
         <scene sceneID="GQl-0V-kxb">
@@ -371,33 +371,85 @@ and deception</string>
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Names" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9T-zT-0l6">
-                                <rect key="frame" x="46" y="206" width="301" height="330"/>
-                                <color key="backgroundColor" name="GhostlyBlue"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="301" id="d7b-hJ-sk5"/>
-                                    <constraint firstAttribute="height" constant="330" id="vmX-4M-suM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
-                                <color key="textColor" name="Navy"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Roles" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Uc-Gb-M5s">
+                                <rect key="frame" x="66.666666666666686" y="137" width="260" height="54"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                <color key="textColor" name="GhostlyBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover your fate in the heart of the cards" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAR-hq-uqX">
+                                <rect key="frame" x="53.666666666666657" y="207" width="286" height="50.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="286" id="jZC-ra-dsi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <color key="textColor" name="CyanAccent"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ell-oH-5IN">
+                                <rect key="frame" x="96.666666666666686" y="701" width="200" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8vc-40-ek1"/>
+                                    <constraint firstAttribute="height" constant="45" id="ihn-PE-tIg"/>
+                                </constraints>
+                                <color key="tintColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Enter the Night">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Navy"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="PressAdd:" destination="tvj-Bl-6CO" eventType="touchUpInside" id="EHb-rg-QEr"/>
+                                    <segue destination="vut-wL-Hsh" kind="show" id="jCT-tJ-hZW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dNC-Yw-BeB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Maroon"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="z9T-zT-0l6" firstAttribute="centerX" secondItem="dNC-Yw-BeB" secondAttribute="centerX" id="Oqw-Fr-Y5q"/>
-                            <constraint firstItem="z9T-zT-0l6" firstAttribute="top" secondItem="dNC-Yw-BeB" secondAttribute="top" constant="103" id="yhc-kg-Po8"/>
+                            <constraint firstItem="IAR-hq-uqX" firstAttribute="top" secondItem="8Uc-Gb-M5s" secondAttribute="bottom" constant="16" id="0bZ-Cw-q2V"/>
+                            <constraint firstItem="8Uc-Gb-M5s" firstAttribute="centerX" secondItem="dNC-Yw-BeB" secondAttribute="centerX" id="Ab6-bY-ejw"/>
+                            <constraint firstItem="dNC-Yw-BeB" firstAttribute="bottom" secondItem="Ell-oH-5IN" secondAttribute="bottom" constant="72" id="GZy-93-OZ5"/>
+                            <constraint firstItem="8Uc-Gb-M5s" firstAttribute="top" secondItem="dNC-Yw-BeB" secondAttribute="top" constant="34" id="Nin-l8-ncw"/>
+                            <constraint firstItem="IAR-hq-uqX" firstAttribute="centerX" secondItem="dNC-Yw-BeB" secondAttribute="centerX" id="R2T-Eo-9Yj"/>
+                            <constraint firstItem="Ell-oH-5IN" firstAttribute="centerX" secondItem="dNC-Yw-BeB" secondAttribute="centerX" id="wtT-ad-BZm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3LC-kU-GL5"/>
                     <connections>
-                        <outlet property="RolesDisplay" destination="z9T-zT-0l6" id="nJH-nQ-L7Z"/>
+                        <outlet property="EnterNightButton" destination="Ell-oH-5IN" id="zkt-HD-UcV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPo-Gi-nqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2468" y="14"/>
+            <point key="canvasLocation" x="2467.93893129771" y="2.8169014084507045"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="BXm-h5-Jod">
+            <objects>
+                <hostingController id="tvf-Ao-gNs" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Tyj-fM-QDy"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gOL-jV-IMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2468" y="715"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yPm-sO-jQi">
+            <objects>
+                <viewController id="vut-wL-Hsh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VfJ-Rj-f0b">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="P0l-RS-F9E"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JC8-GX-mxn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wf7-dg-QfF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3352" y="3"/>
         </scene>
     </scenes>
     <resources>

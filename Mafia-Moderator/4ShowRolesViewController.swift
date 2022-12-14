@@ -1,35 +1,34 @@
 //
 //  ShowRolesViewController.swift
-//  Mafia-Moderator
-//
-//  Created by Tiffany Nguyen on 12/13/22.
+//  Project: Mafia-Moderator
+//  Description: Page to View Roles
+//  Author: Tiffany Nguyen
+//  Creation Date: 12/13/22.
 //
 
 import UIKit
+import SwiftUI
 
 class ShowRolesViewController: UIViewController {
-
-    @IBOutlet weak var RolesDisplay: UILabel!
     
+    @IBOutlet weak var EnterNightButton: UIButton!
+    
+    fileprivate let rolesCardUI = UIHostingController(rootView: ShowRolesUI())
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        var text=""
-        for i in 0...(gameSetting.numOfPlayers-1){
-            text.append("\n \(gameSetting.playerList[i].name): \(gameSetting.playerList[i].role)")
-        }
-        RolesDisplay.text=text
-        // Do any additional setup after loading the view.
+        EnterNightButton.tintColor = UIColor(named: "GhostlyBlue")
+        
+        //set up card swiftUI
+        setupHC()
+        rolesCardUI.view.frame = .init(x: 1, y: 275, width: 400, height: 400)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    fileprivate func setupHC(){
+        addChild(rolesCardUI) //add controller
+        view.addSubview(rolesCardUI.view) //add view
+        rolesCardUI.didMove(toParent: self)
     }
-    */
-
 }
+
