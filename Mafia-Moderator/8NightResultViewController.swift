@@ -12,13 +12,18 @@ class NightResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        resultLabel.text = "M:\(gameSetting.murderAttemptIndex)\nN:\(gameSetting.saveAttemptIndex)"
         if (gameSetting.murderAttemptIndex == gameSetting.saveAttemptIndex){
             resultLabel.text = "There was a murder attempt on \(gameSetting.alivePlayerList[gameSetting.murderAttemptIndex].name), but they were saved"
         } else{
             resultLabel.text = "\(gameSetting.alivePlayerList[gameSetting.murderAttemptIndex].name) was killed during the night"
             gameSetting.playerDeath(index: gameSetting.murderAttemptIndex)
         }
+        //display players for test
+//        var playerListText=""
+//        for player in gameSetting.alivePlayerList{
+//            playerListText.append("\n\(player.name)")
+//        }
+//        resultLabel.text = playerListText
     }
 
 

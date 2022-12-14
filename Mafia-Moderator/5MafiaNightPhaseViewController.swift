@@ -27,16 +27,7 @@ class MafiaNightPhaseViewController: UIViewController{
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //pass variables over
         gameSetting.murderAttemptIndex = self.murderAttemptIndex
-//        if segue.identifier == "showDetail" {
-//                if let indexPath = self.tableView.indexPathForSelectedRow {
-//                    let controller = segue.destination as! ViewControllerB
-//                    controller.selectedName = objects[indexPath.row]
-//                }
-//            }
-//        let step2VC = segue.destination as! NightResultViewController //check destination
-//        step2VC.murderAttemptIndex = self.murderAttemptIndex
     }
 }
 

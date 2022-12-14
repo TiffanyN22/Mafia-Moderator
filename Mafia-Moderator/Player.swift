@@ -78,7 +78,7 @@ class gameSetting: NSObject {
             numOnTeamTown -= 1
         }
         
-//        playerList.remove(at: index)
+        alivePlayerList.remove(at: index)
     }
 }
 
