@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -783,18 +782,53 @@ and deception</string>
         <!--Vote Result-->
         <scene sceneID="ETq-Eb-OjN">
             <objects>
-                <viewController title="Vote Result" id="WRh-Y6-Sg4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VoteResultViewController" title="Vote Result" id="WRh-Y6-Sg4" customClass="VoteResultViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sq8-Do-0oY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You voted off ___ even though they were innocent - try better next time!" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1az-g7-qVx">
+                                <rect key="frame" x="36.666666666666657" y="94" width="320" height="460"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="LtG-Uw-yyY"/>
+                                    <constraint firstAttribute="height" constant="460" id="N2t-WT-u8j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                <color key="textColor" name="Navy"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eil-cJ-niR">
+                                <rect key="frame" x="87.666666666666686" y="615" width="218" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Cme-m0-KOf"/>
+                                    <constraint firstAttribute="width" constant="218" id="bce-nv-rbo"/>
+                                </constraints>
+                                <color key="tintColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="GhostlyBlue"/>
+                                    <color key="baseBackgroundColor" name="DarkCyan"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ZvP-p8-mjD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="GhostlyCyan"/>
+                        <constraints>
+                            <constraint firstItem="Eil-cJ-niR" firstAttribute="centerX" secondItem="ZvP-p8-mjD" secondAttribute="centerX" id="5ca-16-xVc"/>
+                            <constraint firstItem="1az-g7-qVx" firstAttribute="top" secondItem="ZvP-p8-mjD" secondAttribute="top" constant="35" id="LrW-do-Ec7"/>
+                            <constraint firstItem="1az-g7-qVx" firstAttribute="centerX" secondItem="ZvP-p8-mjD" secondAttribute="centerX" id="h03-89-eJS"/>
+                            <constraint firstItem="ZvP-p8-mjD" firstAttribute="bottom" secondItem="Eil-cJ-niR" secondAttribute="bottom" constant="120" id="mwE-4y-Ack"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1kc-2P-rqO"/>
+                    <connections>
+                        <outlet property="voteResultLabel" destination="1az-g7-qVx" id="d32-dO-c4h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ekz-7E-41p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7384" y="3"/>
+            <point key="canvasLocation" x="7383.9694656488546" y="2.8169014084507045"/>
         </scene>
         <!--DisplayWinner-->
         <scene sceneID="rVr-MT-DvU">
@@ -833,8 +867,5 @@ and deception</string>
         <namedColor name="Navy">
             <color red="0.075000002980232239" green="0.035000000149011612" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

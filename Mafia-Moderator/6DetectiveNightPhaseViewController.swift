@@ -27,6 +27,10 @@ class DetectiveNightPhaseViewController: UIViewController {
         ConfirmDecisionButton.titleLabel?.textAlignment = .center
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        selection = 0
+    }
+    
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         //only segue if button says next (player role already displayed
         return (ConfirmDecisionButton.titleLabel!.text == "Next")

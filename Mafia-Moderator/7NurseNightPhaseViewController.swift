@@ -24,6 +24,10 @@ class NurseNightPhaseViewController: UIViewController {
         nurseConfirmDecisionButton.titleLabel?.textAlignment = .center
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        saveAttemptIndex = 0
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         gameSetting.saveAttemptIndex = self.saveAttemptIndex
     }

@@ -26,6 +26,10 @@ class MafiaNightPhaseViewController: UIViewController{
         ConfirmDecisionButton.titleLabel?.textAlignment = .center
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        murderAttemptIndex = 0 //reset selector to 0 when coming back to this screen
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         gameSetting.murderAttemptIndex = self.murderAttemptIndex
     }
