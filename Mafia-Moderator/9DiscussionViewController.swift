@@ -18,13 +18,16 @@ class DiscussionViewController: UIViewController {
         discussionPlayerSelector.delegate = self
         discussionPlayerSelector.dataSource = self
         discussionPlayerSelector.setValue(UIColor(named: "Navy")!, forKeyPath: "textColor")
-
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        selectionIndex = 0
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //pass on voted player index
         let resultView = segue.destination as! VoteResultViewController
-        resultView.votedOutPlayerIndex = selectionIndex
+        resultView.votedOutPlayerIndex = self.selectionIndex
     }
 
 }

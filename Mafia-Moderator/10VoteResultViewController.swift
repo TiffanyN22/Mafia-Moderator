@@ -25,7 +25,7 @@ class VoteResultViewController: UIViewController {
             voteResultLabel.textColor = UIColor(named: "Navy")!
         }
         
-        gameSetting.playerDeath(index: votedOutPlayerIndex!)
+        gameSetting.playerDeath(index: votedOutPlayerIndex ?? 0) //TODO: ALERT
     }
     
 

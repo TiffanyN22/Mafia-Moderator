@@ -29,7 +29,7 @@
             <objects>
                 <viewController title="Home Page" id="yed-lR-nI6" customClass="HomePageViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2hc-tW-FWH">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mafia Moderator" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA4-0r-fhX">
@@ -91,11 +91,11 @@ and deception</string>
             <objects>
                 <viewController title="Game Settings" id="QZo-Ep-7tO" customClass="GameSettingsPageViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0xb-OP-hNO">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="GWk-Fa-D3t">
-                                <rect key="frame" x="283" y="303.33333333333331" width="94" height="32"/>
+                                <rect key="frame" x="283" y="259.33333333333331" width="94" height="32"/>
                                 <color key="backgroundColor" name="GhostlyCyan"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -103,7 +103,7 @@ and deception</string>
                                 </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="DG9-6r-tVC">
-                                <rect key="frame" x="283" y="359.33333333333331" width="94" height="32"/>
+                                <rect key="frame" x="283" y="315.33333333333331" width="94" height="32"/>
                                 <color key="backgroundColor" name="GhostlyCyan"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -111,7 +111,7 @@ and deception</string>
                                 </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="bQH-3X-aJ3">
-                                <rect key="frame" x="283" y="415.33333333333331" width="94" height="32"/>
+                                <rect key="frame" x="283" y="371.33333333333331" width="94" height="32"/>
                                 <color key="backgroundColor" name="GhostlyCyan"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -119,7 +119,7 @@ and deception</string>
                                 </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="8AB-mm-sgn">
-                                <rect key="frame" x="283" y="471.33333333333331" width="94" height="32"/>
+                                <rect key="frame" x="283" y="427.33333333333331" width="94" height="32"/>
                                 <color key="backgroundColor" name="GhostlyCyan"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -127,7 +127,7 @@ and deception</string>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Number of Civilians: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ame-NS-JFD">
-                                <rect key="frame" x="16" y="303.33333333333331" width="267" height="32"/>
+                                <rect key="frame" x="16" y="259.33333333333331" width="267" height="32"/>
                                 <color key="backgroundColor" name="CyanAccent"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="h9p-MD-wU2"/>
@@ -137,7 +137,7 @@ and deception</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Number of Mafia: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E1-84-gpU">
-                                <rect key="frame" x="16" y="359.33333333333331" width="267" height="32"/>
+                                <rect key="frame" x="16" y="315.33333333333331" width="267" height="32"/>
                                 <color key="backgroundColor" name="CyanAccent"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="bh0-Nb-7Hz"/>
@@ -147,7 +147,7 @@ and deception</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Number of Detectives: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3L-nk-j0c">
-                                <rect key="frame" x="16" y="415.33333333333331" width="267" height="32"/>
+                                <rect key="frame" x="16" y="371.33333333333331" width="267" height="32"/>
                                 <color key="backgroundColor" name="CyanAccent"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="267" id="3aa-U0-zbT"/>
@@ -158,7 +158,7 @@ and deception</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Number of Nurses: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73c-u4-5Oj">
-                                <rect key="frame" x="16" y="471.33333333333331" width="267" height="32"/>
+                                <rect key="frame" x="16" y="427.33333333333331" width="267" height="32"/>
                                 <color key="backgroundColor" red="0.56464103460000004" green="0.75632149360000001" blue="0.84494670969999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="267" id="YNI-6d-5Ls"/>
@@ -169,13 +169,13 @@ and deception</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Settings" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5v-l9-fKi">
-                                <rect key="frame" x="23" y="134" width="346" height="54"/>
+                                <rect key="frame" x="23" y="90" width="346" height="54"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
                                 <color key="textColor" name="GhostlyBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="r7f-Gy-l2g">
-                                <rect key="frame" x="143.66666666666666" y="683.33333333333337" width="105.66666666666666" height="50.666666666666629"/>
+                                <rect key="frame" x="143.66666666666666" y="639.33333333333337" width="105.66666666666666" height="50.666666666666629"/>
                                 <color key="tintColor" name="GhostlyBlue"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Done" cornerStyle="small">
@@ -188,7 +188,7 @@ and deception</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the number of people tied into this Mafia scheme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JY-xC-vpf">
-                                <rect key="frame" x="-123" y="210" width="639" height="25.333333333333343"/>
+                                <rect key="frame" x="-123" y="166" width="639" height="25.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
                                 <color key="textColor" name="CyanAccent"/>
                                 <nil key="highlightedColor"/>
@@ -252,17 +252,17 @@ and deception</string>
             <objects>
                 <viewController title="PlayerNames" id="tvj-Bl-6CO" customClass="PlayerNameViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fKs-1P-aJo">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Players" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gf5-lQ-YuO">
-                                <rect key="frame" x="111" y="126" width="171" height="54"/>
+                                <rect key="frame" x="111" y="82" width="171" height="54"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
                                 <color key="textColor" name="GhostlyBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I want names. Now." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBz-gp-bfH">
-                                <rect key="frame" x="84.666666666666686" y="198" width="224" height="26"/>
+                                <rect key="frame" x="84.666666666666686" y="154" width="224" height="26"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
                                 <color key="textColor" name="CyanAccent"/>
                                 <nil key="highlightedColor"/>
@@ -275,7 +275,7 @@ and deception</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Names" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gc1-CT-0F8">
-                                <rect key="frame" x="46" y="249" width="301" height="330"/>
+                                <rect key="frame" x="46" y="205" width="301" height="330"/>
                                 <color key="backgroundColor" name="GhostlyBlue"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="301" id="HIb-TD-G0t"/>
@@ -286,7 +286,7 @@ and deception</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Name" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Efo-bH-lk8">
-                                <rect key="frame" x="46" y="654" width="301" height="34"/>
+                                <rect key="frame" x="46" y="610" width="301" height="34"/>
                                 <color key="backgroundColor" name="GhostlyBlue"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="301" id="GsC-q1-tYb"/>
@@ -297,7 +297,7 @@ and deception</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHR-QA-qqQ">
-                                <rect key="frame" x="46" y="713" width="143" height="43"/>
+                                <rect key="frame" x="46" y="669" width="143" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="3YB-c7-RZI"/>
                                     <constraint firstAttribute="height" constant="43" id="l52-4I-niN"/>
@@ -313,7 +313,7 @@ and deception</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3z-2A-N5D">
-                                <rect key="frame" x="204" y="713" width="143" height="43"/>
+                                <rect key="frame" x="204" y="669" width="143" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="50K-2q-w4j"/>
                                     <constraint firstAttribute="width" constant="143" id="9iH-xw-H6p"/>
@@ -367,17 +367,17 @@ and deception</string>
             <objects>
                 <viewController storyboardIdentifier="DisplayRoles" id="3a9-Bd-MvH" customClass="ShowRolesViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZBg-Am-vgy">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Roles" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Uc-Gb-M5s">
-                                <rect key="frame" x="66.666666666666686" y="137" width="260" height="54"/>
+                                <rect key="frame" x="66.666666666666686" y="93" width="260" height="54"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
                                 <color key="textColor" name="GhostlyBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover your fate in the heart of the cards" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAR-hq-uqX">
-                                <rect key="frame" x="53.666666666666657" y="207" width="286" height="50.666666666666686"/>
+                                <rect key="frame" x="53.666666666666657" y="163" width="286" height="50.666666666666657"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="286" id="jZC-ra-dsi"/>
                                 </constraints>
@@ -386,7 +386,7 @@ and deception</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ell-oH-5IN">
-                                <rect key="frame" x="96.666666666666686" y="701" width="200" height="45"/>
+                                <rect key="frame" x="96.666666666666686" y="666" width="200" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="8vc-40-ek1"/>
                                     <constraint firstAttribute="height" constant="45" id="ihn-PE-tIg"/>
@@ -429,17 +429,17 @@ and deception</string>
             <objects>
                 <viewController storyboardIdentifier="MafiaNightPhaseViewController" id="vut-wL-Hsh" customClass="MafiaNightPhaseViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VfJ-Rj-f0b">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mafia" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2G-Lm-s1Y">
-                                <rect key="frame" x="130.66666666666666" y="143" width="131.99999999999997" height="54"/>
+                                <rect key="frame" x="130.66666666666666" y="99" width="131.99999999999997" height="54"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
                                 <color key="textColor" name="GhostlyBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wake up, look around you, and select the person who will soon become your first victim" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6Q-oR-e2W">
-                                <rect key="frame" x="34" y="213" width="325" height="125"/>
+                                <rect key="frame" x="34" y="169" width="325" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="0N5-Oi-7IS"/>
                                     <constraint firstAttribute="height" constant="125" id="Vns-Jx-nsD"/>
@@ -449,7 +449,7 @@ and deception</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSQ-ip-oRf">
-                                <rect key="frame" x="87.666666666666686" y="672" width="218" height="81"/>
+                                <rect key="frame" x="87.666666666666686" y="637" width="218" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="218" id="mMb-hA-3eZ"/>
                                     <constraint firstAttribute="height" constant="81" id="we7-v4-HK7"/>
@@ -466,7 +466,7 @@ and deception</string>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNU-Cv-hFl">
-                                <rect key="frame" x="36.666666666666657" y="393" width="320" height="216"/>
+                                <rect key="frame" x="36.666666666666657" y="349" width="320" height="216"/>
                                 <color key="backgroundColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pickerView>
                         </subviews>
@@ -498,21 +498,21 @@ and deception</string>
             <objects>
                 <viewController title="Detective Night Phase" id="Z6U-U8-tYL" customClass="DetectiveNightPhaseViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uaZ-n4-FGD">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detective" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lc-1N-EZR">
-                                <rect key="frame" x="90" y="148" width="213" height="54"/>
+                                <rect key="frame" x="90" y="104" width="213" height="54"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
                                 <color key="textColor" name="GhostlyBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNS-Fp-nQ8">
-                                <rect key="frame" x="36.666666666666657" y="353" width="320" height="216"/>
+                                <rect key="frame" x="36.666666666666657" y="309" width="320" height="216"/>
                                 <color key="backgroundColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgO-8p-JXn">
-                                <rect key="frame" x="87.666666666666686" y="687" width="218" height="81"/>
+                                <rect key="frame" x="87.666666666666686" y="652" width="218" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="218" id="ath-9Z-fMA"/>
                                     <constraint firstAttribute="height" constant="81" id="ouS-hy-Zt6"/>
@@ -530,7 +530,7 @@ and deception</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Like it or not, everyone around you is a suspect: who will you choose to investigate?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fko-s4-wwI">
-                                <rect key="frame" x="34" y="210" width="325" height="125"/>
+                                <rect key="frame" x="34" y="166" width="325" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="CjZ-oJ-KgQ"/>
                                     <constraint firstAttribute="width" constant="325" id="Z5r-ZD-gVc"/>
@@ -540,7 +540,7 @@ and deception</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suspect  Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAX-Cu-vgP">
-                                <rect key="frame" x="36.666666666666657" y="588" width="320" height="80"/>
+                                <rect key="frame" x="36.666666666666657" y="544" width="320" height="80"/>
                                 <color key="backgroundColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="Ewo-vg-YCS"/>
@@ -582,11 +582,11 @@ and deception</string>
             <objects>
                 <viewController title="NurseNightPhase" id="dRl-HY-reN" customClass="NurseNightPhaseViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hCn-ra-3Sa">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have the power to save one person - will you choose the choose the correct soul?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEw-jj-NLq">
-                                <rect key="frame" x="34" y="215" width="325" height="125"/>
+                                <rect key="frame" x="34" y="171" width="325" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="Sba-Od-0Wf"/>
                                     <constraint firstAttribute="height" constant="125" id="uKW-1C-Rho"/>
@@ -596,11 +596,11 @@ and deception</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kme-qn-UQr">
-                                <rect key="frame" x="36.666666666666657" y="370" width="320" height="216"/>
+                                <rect key="frame" x="36.666666666666657" y="326" width="320" height="216"/>
                                 <color key="backgroundColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aof-Gf-Sg1">
-                                <rect key="frame" x="87.666666666666686" y="670" width="218" height="81"/>
+                                <rect key="frame" x="87.666666666666686" y="635" width="218" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="218" id="JW9-w5-Hed"/>
                                     <constraint firstAttribute="height" constant="81" id="uQP-vU-nc3"/>
@@ -618,7 +618,7 @@ and deception</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nurse" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lF-rw-HOc">
-                                <rect key="frame" x="132" y="153" width="129" height="54"/>
+                                <rect key="frame" x="132" y="109" width="129" height="54"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
                                 <color key="textColor" name="GhostlyBlue"/>
                                 <nil key="highlightedColor"/>
@@ -652,11 +652,11 @@ and deception</string>
             <objects>
                 <viewController storyboardIdentifier="NightResultStoryboard" title="NightResults" id="hCs-NX-Mf7" customClass="NightResultViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dSy-Jk-dtx">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__ was killed during the night" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8h-8j-P1f">
-                                <rect key="frame" x="36.666666666666657" y="265" width="320" height="391"/>
+                                <rect key="frame" x="36.666666666666657" y="225.66666666666663" width="320" height="391"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="391" id="BCk-Yh-Oup"/>
                                     <constraint firstAttribute="width" constant="320" id="CSL-Vu-vxy"/>
@@ -666,7 +666,7 @@ and deception</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiV-Cb-zKI">
-                                <rect key="frame" x="87.666666666666686" y="676" width="218" height="60"/>
+                                <rect key="frame" x="87.666666666666686" y="641" width="218" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="8Jk-GT-lsI"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="218" id="dCk-ag-VsO"/>
@@ -840,17 +840,61 @@ and deception</string>
                     <view key="view" contentMode="scaleToFill" id="US3-jP-nMI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!  Mafia won because they outnumber the town!" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kk0-kY-hlh">
+                                <rect key="frame" x="36.666666666666657" y="254" width="320" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="FR9-VW-mOw"/>
+                                    <constraint firstAttribute="width" constant="320" id="jba-yo-9jC"/>
+                                    <constraint firstAttribute="height" constant="220" id="kUj-fd-3RJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="33"/>
+                                <color key="textColor" name="GhostlyBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQA-Xd-Y1q">
+                                <rect key="frame" x="87.666666666666686" y="561" width="218" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="chT-J5-fUK"/>
+                                    <constraint firstAttribute="width" constant="218" id="sOQ-R7-lbA"/>
+                                </constraints>
+                                <color key="tintColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Home">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Maroon"/>
+                                    <color key="baseBackgroundColor" name="GhostlyBlue"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="WRh-Y6-Sg4" eventType="touchUpInside" id="riR-5W-kaf"/>
+                                    <segue destination="yed-lR-nI6" kind="show" id="hzA-eI-nnj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="oeT-ka-6oS"/>
-                        <color key="backgroundColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="Maroon"/>
                         <color key="tintColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="kk0-kY-hlh" firstAttribute="top" secondItem="oeT-ka-6oS" secondAttribute="top" constant="195" id="6pg-63-MI6"/>
+                            <constraint firstItem="GQA-Xd-Y1q" firstAttribute="centerX" secondItem="oeT-ka-6oS" secondAttribute="centerX" id="Cnz-IH-WjH"/>
+                            <constraint firstItem="GQA-Xd-Y1q" firstAttribute="top" secondItem="kk0-kY-hlh" secondAttribute="bottom" constant="87" id="hxS-fm-1Ub"/>
+                            <constraint firstItem="kk0-kY-hlh" firstAttribute="centerX" secondItem="oeT-ka-6oS" secondAttribute="centerX" id="o8H-iV-C5b"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Qea-Hq-iYw"/>
+                    <connections>
+                        <outlet property="homeButton" destination="GQA-Xd-Y1q" id="eIH-cZ-WCF"/>
+                        <outlet property="winnerText" destination="kk0-kY-hlh" id="mcf-5d-jXS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPs-ht-XRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8117" y="3"/>
+            <point key="canvasLocation" x="8116.7938931297704" y="2.8169014084507045"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hzA-eI-nnj"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="CyanAccent">
             <color red="0.56499999761581421" green="0.75700002908706665" blue="0.84299999475479126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
