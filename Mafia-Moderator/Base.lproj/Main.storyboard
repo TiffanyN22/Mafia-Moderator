@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -650,7 +651,7 @@ and deception</string>
         <!--NightResults-->
         <scene sceneID="gJQ-4c-94O">
             <objects>
-                <viewController title="NightResults" id="hCs-NX-Mf7" customClass="NightResultViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NightResultStoryboard" title="NightResults" id="hCs-NX-Mf7" customClass="NightResultViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dSy-Jk-dtx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -665,22 +666,75 @@ and deception</string>
                                 <color key="textColor" name="GhostlyBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiV-Cb-zKI">
+                                <rect key="frame" x="87.666666666666686" y="676" width="218" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="8Jk-GT-lsI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="218" id="dCk-ag-VsO"/>
+                                </constraints>
+                                <color key="tintColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Begin Discussions">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Maroon"/>
+                                    <color key="baseBackgroundColor" name="CyanAccent"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="beginDiscussionButtonPressed:" destination="hCs-NX-Mf7" eventType="touchUpInside" id="Er0-52-t98"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dNR-c1-ZIe"/>
                         <color key="backgroundColor" name="Maroon"/>
                         <constraints>
+                            <constraint firstItem="dNR-c1-ZIe" firstAttribute="bottom" secondItem="GiV-Cb-zKI" secondAttribute="bottom" constant="82" id="9Kj-Jq-s0k"/>
                             <constraint firstItem="W8h-8j-P1f" firstAttribute="centerY" secondItem="dNR-c1-ZIe" secondAttribute="centerY" id="QYN-V7-WCo"/>
                             <constraint firstItem="W8h-8j-P1f" firstAttribute="centerX" secondItem="dNR-c1-ZIe" secondAttribute="centerX" id="eaF-Qd-aSg"/>
+                            <constraint firstItem="GiV-Cb-zKI" firstAttribute="centerX" secondItem="dNR-c1-ZIe" secondAttribute="centerX" id="kkg-rv-27w"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PjF-Wz-Te6"/>
                     <connections>
+                        <outlet property="beginDiscussionButton" destination="GiV-Cb-zKI" id="2WU-lx-91K"/>
                         <outlet property="resultLabel" destination="W8h-8j-P1f" id="FmQ-FA-JMv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGK-qo-pb4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5826.7175572519081" y="2.8169014084507045"/>
+        </scene>
+        <!--Discussion View Controller-->
+        <scene sceneID="yrl-0J-BvI">
+            <objects>
+                <viewController storyboardIdentifier="DiscussionViewController" id="DKJ-ts-HA8" customClass="DiscussionViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f2C-ec-qvh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GIp-Ry-0HM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qPQ-zR-Ats"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CTs-mx-FIw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6651" y="3"/>
+        </scene>
+        <!--DisplayWinner-->
+        <scene sceneID="rVr-MT-DvU">
+            <objects>
+                <viewController storyboardIdentifier="DisplayWinnerViewController" title="DisplayWinner" id="Imh-yd-Q8D" customClass="DisplayWinnerViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="US3-jP-nMI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oeT-ka-6oS"/>
+                        <color key="backgroundColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qea-Hq-iYw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZPs-ht-XRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7466" y="3"/>
         </scene>
     </scenes>
     <resources>
@@ -702,5 +756,8 @@ and deception</string>
         <namedColor name="Navy">
             <color red="0.075000002980232239" green="0.035000000149011612" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

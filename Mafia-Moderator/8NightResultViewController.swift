@@ -1,7 +1,7 @@
 //
 //  NightResultViewController.swift
 //  Mafia-Moderator
-//
+//  Acknowledgements: Logic for segue with code came from https://youtu.be/DxCydBmOqXU
 //  Created by Tiffany Nguyen on 12/13/22.
 //
 
@@ -9,6 +9,8 @@ import UIKit
 
 class NightResultViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var beginDiscussionButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,13 +20,30 @@ class NightResultViewController: UIViewController {
             resultLabel.text = "\(gameSetting.alivePlayerList[gameSetting.murderAttemptIndex].name) was killed during the night"
             gameSetting.playerDeath(index: gameSetting.murderAttemptIndex)
         }
+    }
+
         //display players for test
 //        var playerListText=""
 //        for player in gameSetting.alivePlayerList{
 //            playerListText.append("\n\(player.name)")
 //        }
 //        resultLabel.text = playerListText
+        
+    @IBAction func beginDiscussionButtonPressed(_ sender: Any) {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        if(gameSetting.checkGameEnded()){
+            guard let displayWinnerViewController = mainStoryboard.instantiateViewController(withIdentifier: "DisplayWinnerViewController") as? DisplayWinnerViewController else{
+                print("Couldn't find view controller")
+                return
+            }
+            navigationController?.pushViewController(displayWinnerViewController, animated: true)
+        } else{
+            guard let discussionViewController = mainStoryboard.instantiateViewController(withIdentifier: "DiscussionViewController") as? DiscussionViewController else{
+                print("Couldn't find view controller")
+                return
+            }
+            navigationController?.pushViewController(discussionViewController, animated: true)
+        }
     }
-
-
 }

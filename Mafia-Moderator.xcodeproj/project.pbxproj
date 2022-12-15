@@ -20,6 +20,8 @@
 		C681C9EC29498BDD005A2F24 /* 6DetectiveNightPhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681C9EB29498BDD005A2F24 /* 6DetectiveNightPhaseViewController.swift */; };
 		C681C9EE29499FA4005A2F24 /* 7NurseNightPhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681C9ED29499FA4005A2F24 /* 7NurseNightPhaseViewController.swift */; };
 		C681C9F02949B1A0005A2F24 /* 8NightResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681C9EF2949B1A0005A2F24 /* 8NightResultViewController.swift */; };
+		C681C9F2294AE143005A2F24 /* 9DiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681C9F1294AE143005A2F24 /* 9DiscussionViewController.swift */; };
+		C681C9F4294AE30F005A2F24 /* 10DisplayWinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C681C9F3294AE30F005A2F24 /* 10DisplayWinnerViewController.swift */; };
 		C6883F7E294920D800AFD524 /* 3PlayerNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6883F7D294920D800AFD524 /* 3PlayerNameViewController.swift */; };
 		C6883F8029492D4000AFD524 /* 4ShowRolesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6883F7F29492D4000AFD524 /* 4ShowRolesViewController.swift */; };
 		C6883F8229495F0200AFD524 /* 4ShowRolesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6883F8129495F0200AFD524 /* 4ShowRolesUI.swift */; };
@@ -42,6 +44,8 @@
 		C681C9EB29498BDD005A2F24 /* 6DetectiveNightPhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 6DetectiveNightPhaseViewController.swift; sourceTree = "<group>"; };
 		C681C9ED29499FA4005A2F24 /* 7NurseNightPhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 7NurseNightPhaseViewController.swift; sourceTree = "<group>"; };
 		C681C9EF2949B1A0005A2F24 /* 8NightResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 8NightResultViewController.swift; sourceTree = "<group>"; };
+		C681C9F1294AE143005A2F24 /* 9DiscussionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9DiscussionViewController.swift; sourceTree = "<group>"; };
+		C681C9F3294AE30F005A2F24 /* 10DisplayWinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10DisplayWinnerViewController.swift; sourceTree = "<group>"; };
 		C6883F7D294920D800AFD524 /* 3PlayerNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3PlayerNameViewController.swift; sourceTree = "<group>"; };
 		C6883F7F29492D4000AFD524 /* 4ShowRolesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4ShowRolesViewController.swift; sourceTree = "<group>"; };
 		C6883F8129495F0200AFD524 /* 4ShowRolesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4ShowRolesUI.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 				C681C9EB29498BDD005A2F24 /* 6DetectiveNightPhaseViewController.swift */,
 				C681C9ED29499FA4005A2F24 /* 7NurseNightPhaseViewController.swift */,
 				C681C9EF2949B1A0005A2F24 /* 8NightResultViewController.swift */,
+				C681C9F1294AE143005A2F24 /* 9DiscussionViewController.swift */,
+				C681C9F3294AE30F005A2F24 /* 10DisplayWinnerViewController.swift */,
 				C6633BA2294811F50085E7B8 /* THE MURDER.ttf */,
 				C6633BA629481CC80085E7B8 /* Player.swift */,
 			);
@@ -174,6 +180,7 @@
 			files = (
 				C6633B8F294807E90085E7B8 /* ViewController.swift in Sources */,
 				C681C9EE29499FA4005A2F24 /* 7NurseNightPhaseViewController.swift in Sources */,
+				C681C9F2294AE143005A2F24 /* 9DiscussionViewController.swift in Sources */,
 				C6633B8B294807E90085E7B8 /* AppDelegate.swift in Sources */,
 				C6883FA629497DAC00AFD524 /* 5MafiaNightPhaseViewController.swift in Sources */,
 				C6633BA129480D450085E7B8 /* 1HomePageViewController.swift in Sources */,
@@ -181,6 +188,7 @@
 				C6633B8D294807E90085E7B8 /* SceneDelegate.swift in Sources */,
 				C6883F8029492D4000AFD524 /* 4ShowRolesViewController.swift in Sources */,
 				C6883F8229495F0200AFD524 /* 4ShowRolesUI.swift in Sources */,
+				C681C9F4294AE30F005A2F24 /* 10DisplayWinnerViewController.swift in Sources */,
 				C6633BA729481CC80085E7B8 /* Player.swift in Sources */,
 				C681C9F02949B1A0005A2F24 /* 8NightResultViewController.swift in Sources */,
 				C681C9EC29498BDD005A2F24 /* 6DetectiveNightPhaseViewController.swift in Sources */,
