@@ -427,7 +427,7 @@ and deception</string>
         <!--Mafia Night Phase View Controller-->
         <scene sceneID="yPm-sO-jQi">
             <objects>
-                <viewController storyboardIdentifier="MafiaNight" id="vut-wL-Hsh" customClass="MafiaNightPhaseViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MafiaNightPhaseViewController" id="vut-wL-Hsh" customClass="MafiaNightPhaseViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VfJ-Rj-f0b">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -810,6 +810,9 @@ and deception</string>
                                     <color key="baseForegroundColor" name="GhostlyBlue"/>
                                     <color key="baseBackgroundColor" name="DarkCyan"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="WRh-Y6-Sg4" eventType="touchUpInside" id="C35-4n-Gbt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZvP-p8-mjD"/>

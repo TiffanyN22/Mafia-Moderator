@@ -55,7 +55,7 @@ class gameSetting: NSObject {
     }
     
     static func checkGameEnded() -> Bool{
-        return (numOfMafia == 0 || (numOfMafia > numOfCivilian))
+        return (numOfMafia == 0 || (numOfMafia >= numOnTeamTown))
     }
 }
 
