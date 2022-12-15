@@ -710,14 +710,91 @@ and deception</string>
                     <view key="view" contentMode="scaleToFill" id="f2C-ec-qvh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discussion" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uc4-9e-7Q4">
+                                <rect key="frame" x="73.666666666666686" y="106" width="246" height="54"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                <color key="textColor" name="GhostlyBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdX-4Y-nbz">
+                                <rect key="frame" x="34" y="177" width="325" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="axh-8A-Q9p"/>
+                                    <constraint firstAttribute="width" constant="325" id="lPB-md-9Qy"/>
+                                </constraints>
+                                <string key="text">Murders have been committed, and someone amongst you is responsible - will you vote out the right person, or will another innocent soul die?</string>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <color key="textColor" name="CyanAccent"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxq-wm-Pud">
+                                <rect key="frame" x="36.666666666666657" y="424" width="320" height="216"/>
+                                <color key="backgroundColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WD-Jw-ubg">
+                                <rect key="frame" x="87.666666666666686" y="694" width="218" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="beq-gi-yL5"/>
+                                    <constraint firstAttribute="width" constant="218" id="cEw-0G-dhD"/>
+                                </constraints>
+                                <color key="tintColor" red="0.64973734839999997" green="0.75154700839999999" blue="0.95562913140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Confirm">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Navy"/>
+                                    <color key="baseBackgroundColor" name="CyanAccent"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="WRh-Y6-Sg4" kind="show" id="wQJ-q2-sdo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Voted Out:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qs8-zr-olX">
+                                <rect key="frame" x="108.66666666666669" y="384" width="176" height="32"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
+                                <color key="textColor" name="GhostlyBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="GIp-Ry-0HM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="DarkCyan"/>
+                        <constraints>
+                            <constraint firstItem="GIp-Ry-0HM" firstAttribute="bottom" secondItem="4WD-Jw-ubg" secondAttribute="bottom" constant="76" id="3cI-3X-ccX"/>
+                            <constraint firstItem="qs8-zr-olX" firstAttribute="centerX" secondItem="GIp-Ry-0HM" secondAttribute="centerX" id="3mg-HD-Joe"/>
+                            <constraint firstItem="CdX-4Y-nbz" firstAttribute="top" secondItem="Uc4-9e-7Q4" secondAttribute="bottom" constant="17" id="D2X-m8-4nt"/>
+                            <constraint firstItem="uxq-wm-Pud" firstAttribute="centerX" secondItem="GIp-Ry-0HM" secondAttribute="centerX" id="c9v-pV-YcV"/>
+                            <constraint firstItem="Uc4-9e-7Q4" firstAttribute="top" secondItem="GIp-Ry-0HM" secondAttribute="top" constant="47" id="etx-JB-hT1"/>
+                            <constraint firstItem="4WD-Jw-ubg" firstAttribute="centerX" secondItem="GIp-Ry-0HM" secondAttribute="centerX" id="fFR-ay-D8T"/>
+                            <constraint firstItem="Uc4-9e-7Q4" firstAttribute="centerX" secondItem="GIp-Ry-0HM" secondAttribute="centerX" id="l4O-sf-9Fc"/>
+                            <constraint firstItem="uxq-wm-Pud" firstAttribute="top" secondItem="qs8-zr-olX" secondAttribute="bottom" constant="8" symbolic="YES" id="ofE-GE-MTv"/>
+                            <constraint firstItem="qs8-zr-olX" firstAttribute="top" secondItem="CdX-4Y-nbz" secondAttribute="bottom" constant="32" id="sHA-QD-Ao9"/>
+                            <constraint firstItem="CdX-4Y-nbz" firstAttribute="centerX" secondItem="GIp-Ry-0HM" secondAttribute="centerX" id="vA1-hG-cIc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qPQ-zR-Ats"/>
+                    <connections>
+                        <outlet property="discussionPlayerSelector" destination="uxq-wm-Pud" id="5vo-hw-CyO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CTs-mx-FIw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6651" y="3"/>
+            <point key="canvasLocation" x="6649.6183206106871" y="2.8169014084507045"/>
+        </scene>
+        <!--Vote Result-->
+        <scene sceneID="ETq-Eb-OjN">
+            <objects>
+                <viewController title="Vote Result" id="WRh-Y6-Sg4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sq8-Do-0oY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZvP-p8-mjD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1kc-2P-rqO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ekz-7E-41p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7384" y="3"/>
         </scene>
         <!--DisplayWinner-->
         <scene sceneID="rVr-MT-DvU">
@@ -734,7 +811,7 @@ and deception</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPs-ht-XRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7466" y="3"/>
+            <point key="canvasLocation" x="8117" y="3"/>
         </scene>
     </scenes>
     <resources>

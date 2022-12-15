@@ -9,10 +9,16 @@ import UIKit
 
 class DiscussionViewController: UIViewController {
 
+    @IBOutlet weak var discussionPlayerSelector: UIPickerView!
+    var selectionIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        discussionPlayerSelector.delegate = self
+        discussionPlayerSelector.dataSource = self
+        discussionPlayerSelector.setValue(UIColor(named: "Navy")!, forKeyPath: "textColor")
 
-        // Do any additional setup after loading the view.
     }
     
 
@@ -26,4 +32,24 @@ class DiscussionViewController: UIViewController {
     }
     */
 
+}
+
+extension DiscussionViewController: UIPickerViewDelegate{
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return gameSetting.alivePlayerList[row].name
+    }
+
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectionIndex = row
+    }
+}
+
+extension DiscussionViewController: UIPickerViewDataSource{
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1 //one column for name
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return gameSetting.alivePlayerList.count
+    }
 }
