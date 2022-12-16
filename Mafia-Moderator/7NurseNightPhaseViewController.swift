@@ -22,6 +22,8 @@ class NurseNightPhaseViewController: UIViewController {
         playerSelector.setValue(UIColor(named: "Navy")!, forKeyPath: "textColor")
         
         nurseConfirmDecisionButton.titleLabel?.textAlignment = .center
+        
+        checkNoNurse()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -30,6 +32,18 @@ class NurseNightPhaseViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         gameSetting.saveAttemptIndex = self.saveAttemptIndex
+    }
+    
+    func checkNoNurse(){
+        if(gameSetting.numOfNurse == 0){
+            gameSetting.saveAttemptIndex = -1 //-1 means no save, impossible index
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            guard let nightResultStoryboard = mainStoryboard.instantiateViewController(withIdentifier: "NightResultStoryboard") as? NightResultViewController else{
+                print("Couldn't find view controller")
+                return
+            }
+            navigationController?.pushViewController(nightResultStoryboard, animated: true)
+        }
     }
 }
 

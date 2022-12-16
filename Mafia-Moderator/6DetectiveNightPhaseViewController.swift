@@ -25,6 +25,8 @@ class DetectiveNightPhaseViewController: UIViewController {
         SuspectTeamDisplay.isHidden = true
         
         ConfirmDecisionButton.titleLabel?.textAlignment = .center
+        
+        checkNoDetective()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -34,6 +36,17 @@ class DetectiveNightPhaseViewController: UIViewController {
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         //only segue if button says next (player role already displayed
         return (ConfirmDecisionButton.titleLabel!.text == "Next")
+    }
+    
+    func checkNoDetective(){
+        if(gameSetting.numOfDetective == 0){
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            guard let nurseViewController = mainStoryboard.instantiateViewController(withIdentifier: "NurseNightPhaseViewController") as? NurseNightPhaseViewController else{
+                print("Couldn't find view controller")
+                return
+            }
+            navigationController?.pushViewController(nurseViewController, animated: true)
+        }
     }
     
     @IBAction func pressedConfirmDecisionButton(_ sender: Any) {

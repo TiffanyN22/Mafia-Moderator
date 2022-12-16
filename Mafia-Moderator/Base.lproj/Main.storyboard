@@ -580,7 +580,7 @@ and deception</string>
         <!--NurseNightPhase-->
         <scene sceneID="lRD-Zw-qMC">
             <objects>
-                <viewController title="NurseNightPhase" id="dRl-HY-reN" customClass="NurseNightPhaseViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NurseNightPhaseViewController" title="NurseNightPhase" id="dRl-HY-reN" customClass="NurseNightPhaseViewController" customModule="Mafia_Moderator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hCn-ra-3Sa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

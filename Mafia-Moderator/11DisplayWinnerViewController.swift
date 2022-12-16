@@ -15,28 +15,22 @@ class DisplayWinnerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if(gameSetting.numOfMafia == 0){ //town won
-            winnerText.text = "Congratulations! Town won becuase they voted off all the mafia!"
             view.backgroundColor = UIColor(named: "Navy")!
             homeButton.setTitleColor(UIColor(named: "Navy")!, for: UIControl.State.normal)
-    
+            winnerText.text = "Congratulations! Town won becuase they voted off all the mafia!"
         } else{
-            winnerText.text = "Congratulations! Mafia won becuase they outnumbered the town!"
             view.backgroundColor = UIColor(named: "Maroon")!
             homeButton.setTitleColor(UIColor(named: "Maroon")!, for: UIControl.State.normal)
+            winnerText.text = "Congratulations! Mafia won becuase they outnumbered the town!"
+
         }
 
-        // Do any additional setup after loading the view.
+        //display players for test
+//        var playerListText=""
+//            for player in gameSetting.alivePlayerList{
+//            playerListText.append("\n\(player.name): \(player.role)")
+//        }
+//        winnerText.text = playerListText
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
