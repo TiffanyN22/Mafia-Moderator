@@ -26,6 +26,8 @@ class VoteResultViewController: UIViewController {
         }
         
         gameSetting.playerDeath(index: votedOutPlayerIndex ?? 0)
+        
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     @IBAction func nextButtonPressed(_ sender: Any) {

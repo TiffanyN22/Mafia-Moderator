@@ -126,7 +126,6 @@ class PlayerNameViewController: UIViewController {
     }
     
     func updateDisplayedNames(){
-        //TODO: scroll if too many names?
         var namesList = ""
         for player in gameSetting.playerList{
             namesList.append("\n \(player.name)")

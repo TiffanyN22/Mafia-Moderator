@@ -50,7 +50,7 @@ struct card<Front, Back>: View where Front: View, Back: View{
         withAnimation(Animation.linear(duration: animationTime)){
             flashcardRotation += 180
         }
-        //flip content at 90 degrees (when it's hidden from viewer
+        //flip content at 90 degrees (when it's hidden from viewer)
         withAnimation(Animation.linear(duration: 0.001).delay(animationTime/2)){
             contentRotation += 180
             flipped.toggle()

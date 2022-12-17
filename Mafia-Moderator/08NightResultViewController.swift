@@ -20,6 +20,8 @@ class NightResultViewController: UIViewController {
             resultLabel.text = "\(gameSetting.alivePlayerList[gameSetting.murderAttemptIndex].name) was killed during the night. They were a \(gameSetting.alivePlayerList[gameSetting.murderAttemptIndex].role)"
             gameSetting.playerDeath(index: gameSetting.murderAttemptIndex)
         }
+        
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
 
         //display players for test

@@ -22,15 +22,6 @@ class DisplayWinnerViewController: UIViewController {
             view.backgroundColor = UIColor(named: "Maroon")!
             homeButton.setTitleColor(UIColor(named: "Maroon")!, for: UIControl.State.normal)
             winnerText.text = "Congratulations! Mafia won becuase they outnumbered the town!"
-
         }
-
-        //display players for test
-//        var playerListText=""
-//            for player in gameSetting.alivePlayerList{
-//            playerListText.append("\n\(player.name): \(player.role)")
-//        }
-//        winnerText.text = playerListText
     }
-
 }
