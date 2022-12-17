@@ -21,11 +21,11 @@ class VoteResultViewController: UIViewController {
             voteResultLabel.text = ("You voted off \(votedOffPlayer.name), and they were Mafia. Good job!")
             voteResultLabel.textColor = UIColor(named: "Maroon")!
         } else{
-            voteResultLabel.text = ("You voted off \(votedOffPlayer.name) even though they were \(votedOffPlayer.role).  Try better next time!")
+            voteResultLabel.text = ("You voted off \(votedOffPlayer.name) even though they were \(votedOffPlayer.role). Try better next time!")
             voteResultLabel.textColor = UIColor(named: "Navy")!
         }
         
-        gameSetting.playerDeath(index: votedOutPlayerIndex ?? 0)
+        gameSetting.playerDeath(index: votedOutPlayerIndex!)
         
         self.navigationItem.setHidesBackButton(true, animated: true)
     }

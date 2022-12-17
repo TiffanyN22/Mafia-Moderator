@@ -38,12 +38,12 @@ class gameSetting: NSObject {
         numOfPlayers -= 1
         
         //edit number of players in each role
-        if(playerList[index].role == "Mafia"){
+        if(alivePlayerList[index].role == "Mafia"){
             numOfMafia -= 1
-        } else if(playerList[index].role == "Detective"){
+        } else if(alivePlayerList[index].role == "Detective"){
             numOfDetective -= 1
             numOnTeamTown -= 1
-        } else if(playerList[index].role == "Nurse"){
+        } else if(alivePlayerList[index].role == "Nurse"){
             numOfNurse -= 1
             numOnTeamTown -= 1
         } else{

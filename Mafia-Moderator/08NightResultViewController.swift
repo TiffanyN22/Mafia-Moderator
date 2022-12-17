@@ -1,7 +1,6 @@
 //
 //  NightResultViewController.swift
 //  Mafia-Moderator
-//  Acknowledgements: Logic for segue with code came from https://youtu.be/DxCydBmOqXU
 //  Created by Tiffany Nguyen on 12/13/22.
 //
 
@@ -26,7 +25,7 @@ class NightResultViewController: UIViewController {
 
         //display players for test
 //        var playerListText=""
-    //        for player in gameSetting.alivePlayerList{
+//            for player in gameSetting.alivePlayerList{
 //            playerListText.append("\n\(player.name)")
 //        }
 //        resultLabel.text = playerListText

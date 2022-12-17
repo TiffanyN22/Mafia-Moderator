@@ -39,7 +39,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sQd-ha-XAu">
-                                <rect key="frame" x="111" y="973.33333333333337" width="171" height="56.000000000000114"/>
+                                <rect key="frame" x="111" y="600" width="171" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="CX7-se-QMA"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="c5l-bX-NE0"/>
@@ -906,7 +906,7 @@ and deception</string>
         <segue reference="hzA-eI-nnj"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Crosshair" width="561" height="560"/>
+        <image name="Crosshair" width="187" height="186.66667175292969"/>
         <namedColor name="CyanAccent">
             <color red="0.56499999761581421" green="0.75700002908706665" blue="0.84299999475479126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
