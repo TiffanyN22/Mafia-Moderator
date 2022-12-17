@@ -33,46 +33,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mafia Moderator" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA4-0r-fhX">
-                                <rect key="frame" x="16" y="188" width="344" height="64"/>
+                                <rect key="frame" x="20" y="130" width="337" height="104"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="50"/>
                                 <color key="textColor" name="GhostlyBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sQd-ha-XAu">
+                                <rect key="frame" x="111" y="973.33333333333337" width="171" height="56.000000000000114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="CX7-se-QMA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="c5l-bX-NE0"/>
+                                </constraints>
+                                <color key="tintColor" name="GhostlyBlue"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Play Now" cornerStyle="small">
+                                    <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Maroon"/>
+                                    <color key="baseBackgroundColor" name="CyanAccent"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="QZo-Ep-7tO" kind="show" id="lE0-tI-ANQ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Crosshair" translatesAutoresizingMaskIntoConstraints="NO" id="eMd-tR-OMx">
+                                <rect key="frame" x="76" y="401" width="240" height="128"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgp-rs-jk7">
-                                <rect key="frame" x="26" y="287" width="341" height="85"/>
+                                <rect key="frame" x="26" y="270" width="341" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="NiX-t2-sHI"/>
+                                    <constraint firstAttribute="width" constant="341" id="uro-bd-IJK"/>
+                                </constraints>
                                 <string key="text">The ultimate game of murder 
 and deception</string>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
                                 <color key="textColor" name="CyanAccent"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sQd-ha-XAu">
-                                <rect key="frame" x="103" y="398" width="171" height="56"/>
-                                <color key="tintColor" name="GhostlyBlue"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Play Now" cornerStyle="small">
-                                    <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
-                                    <color key="baseForegroundColor" name="Maroon"/>
-                                    <color key="baseBackgroundColor" name="GhostlyBlue"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="QZo-Ep-7tO" kind="show" id="lE0-tI-ANQ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YF7-WQ-8Q4"/>
                         <color key="backgroundColor" name="Navy"/>
                         <color key="tintColor" red="0.42352938649999999" green="0.098039209840000002" blue="0.19215688110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="wgp-rs-jk7" firstAttribute="leading" secondItem="YF7-WQ-8Q4" secondAttribute="leading" constant="58" id="0Pe-e6-gTV"/>
-                            <constraint firstItem="wgp-rs-jk7" firstAttribute="top" secondItem="hA4-0r-fhX" secondAttribute="bottom" constant="35" id="Qrs-ix-TuA"/>
-                            <constraint firstItem="sQd-ha-XAu" firstAttribute="top" secondItem="wgp-rs-jk7" secondAttribute="bottom" constant="26" id="e4d-PK-482"/>
-                            <constraint firstItem="YF7-WQ-8Q4" firstAttribute="trailing" secondItem="sQd-ha-XAu" secondAttribute="trailing" constant="119" id="h5Z-YL-Ro0"/>
-                            <constraint firstItem="YF7-WQ-8Q4" firstAttribute="trailing" secondItem="wgp-rs-jk7" secondAttribute="trailing" constant="59" id="jGt-nb-uXc"/>
-                            <constraint firstItem="hA4-0r-fhX" firstAttribute="top" secondItem="YF7-WQ-8Q4" secondAttribute="top" constant="88" id="kFR-qt-Ysc"/>
-                            <constraint firstItem="YF7-WQ-8Q4" firstAttribute="trailing" secondItem="hA4-0r-fhX" secondAttribute="trailing" constant="33" id="oeY-Nd-GyG"/>
-                            <constraint firstItem="sQd-ha-XAu" firstAttribute="leading" secondItem="YF7-WQ-8Q4" secondAttribute="leading" constant="103" id="r8k-At-E0y"/>
-                            <constraint firstItem="hA4-0r-fhX" firstAttribute="leading" secondItem="YF7-WQ-8Q4" secondAttribute="leading" constant="16" id="uxF-gM-W5f"/>
+                            <constraint firstItem="hA4-0r-fhX" firstAttribute="centerX" secondItem="YF7-WQ-8Q4" secondAttribute="centerX" id="4hL-mg-21s"/>
+                            <constraint firstItem="hA4-0r-fhX" firstAttribute="top" secondItem="YF7-WQ-8Q4" secondAttribute="top" constant="71" id="6OR-Ag-k0O"/>
+                            <constraint firstItem="sQd-ha-XAu" firstAttribute="centerX" secondItem="YF7-WQ-8Q4" secondAttribute="centerX" id="EQ0-5b-6tS"/>
+                            <constraint firstItem="wgp-rs-jk7" firstAttribute="centerX" secondItem="YF7-WQ-8Q4" secondAttribute="centerX" id="OUs-zq-qx2"/>
+                            <constraint firstItem="sQd-ha-XAu" firstAttribute="top" secondItem="eMd-tR-OMx" secondAttribute="bottom" constant="53" id="caC-Oc-Bbd"/>
+                            <constraint firstItem="wgp-rs-jk7" firstAttribute="top" secondItem="hA4-0r-fhX" secondAttribute="bottom" constant="36" id="gw1-gs-aeZ"/>
+                            <constraint firstItem="eMd-tR-OMx" firstAttribute="top" secondItem="wgp-rs-jk7" secondAttribute="bottom" constant="46" id="kCk-qt-858"/>
+                            <constraint firstItem="eMd-tR-OMx" firstAttribute="centerX" secondItem="YF7-WQ-8Q4" secondAttribute="centerX" id="lmL-JK-ejM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="c4v-t8-GHa"/>
@@ -655,18 +665,8 @@ and deception</string>
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__ was killed during the night" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8h-8j-P1f">
-                                <rect key="frame" x="36.666666666666657" y="225.66666666666663" width="320" height="391"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="391" id="BCk-Yh-Oup"/>
-                                    <constraint firstAttribute="width" constant="320" id="CSL-Vu-vxy"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
-                                <color key="textColor" name="GhostlyBlue"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiV-Cb-zKI">
-                                <rect key="frame" x="87.666666666666686" y="641" width="218" height="60"/>
+                                <rect key="frame" x="87.666666666666686" y="623" width="218" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="8Jk-GT-lsI"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="218" id="dCk-ag-VsO"/>
@@ -682,14 +682,24 @@ and deception</string>
                                     <action selector="beginDiscussionButtonPressed:" destination="hCs-NX-Mf7" eventType="touchUpInside" id="Er0-52-t98"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__ was killed during the night" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8h-8j-P1f">
+                                <rect key="frame" x="36.666666666666657" y="159" width="320" height="391"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="391" id="BCk-Yh-Oup"/>
+                                    <constraint firstAttribute="width" constant="320" id="CSL-Vu-vxy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                <color key="textColor" name="GhostlyBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dNR-c1-ZIe"/>
                         <color key="backgroundColor" name="Maroon"/>
                         <constraints>
-                            <constraint firstItem="dNR-c1-ZIe" firstAttribute="bottom" secondItem="GiV-Cb-zKI" secondAttribute="bottom" constant="82" id="9Kj-Jq-s0k"/>
-                            <constraint firstItem="W8h-8j-P1f" firstAttribute="centerY" secondItem="dNR-c1-ZIe" secondAttribute="centerY" id="QYN-V7-WCo"/>
+                            <constraint firstItem="dNR-c1-ZIe" firstAttribute="bottom" secondItem="GiV-Cb-zKI" secondAttribute="bottom" constant="100" id="9Kj-Jq-s0k"/>
                             <constraint firstItem="W8h-8j-P1f" firstAttribute="centerX" secondItem="dNR-c1-ZIe" secondAttribute="centerX" id="eaF-Qd-aSg"/>
                             <constraint firstItem="GiV-Cb-zKI" firstAttribute="centerX" secondItem="dNR-c1-ZIe" secondAttribute="centerX" id="kkg-rv-27w"/>
+                            <constraint firstItem="W8h-8j-P1f" firstAttribute="top" secondItem="dNR-c1-ZIe" secondAttribute="top" constant="100" id="qWk-Jz-Pwf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PjF-Wz-Te6"/>
@@ -896,6 +906,7 @@ and deception</string>
         <segue reference="hzA-eI-nnj"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Crosshair" width="561" height="560"/>
         <namedColor name="CyanAccent">
             <color red="0.56499999761581421" green="0.75700002908706665" blue="0.84299999475479126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
