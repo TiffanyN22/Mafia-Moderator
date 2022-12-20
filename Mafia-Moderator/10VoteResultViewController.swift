@@ -16,7 +16,7 @@ class VoteResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let votedOffPlayer = gameSetting.alivePlayerList[votedOutPlayerIndex!]
+        let votedOffPlayer = GameSetting.alivePlayerList[votedOutPlayerIndex!]
         if(votedOffPlayer.teamMafia){
             voteResultLabel.text = ("You voted off \(votedOffPlayer.name), and they were Mafia. Good job!")
             voteResultLabel.textColor = UIColor(named: "Maroon")!
@@ -25,7 +25,7 @@ class VoteResultViewController: UIViewController {
             voteResultLabel.textColor = UIColor(named: "Navy")!
         }
         
-        gameSetting.playerDeath(index: votedOutPlayerIndex!)
+        GameSetting.playerDeath(index: votedOutPlayerIndex!)
         
         self.navigationItem.setHidesBackButton(true, animated: true)
     }
@@ -33,7 +33,7 @@ class VoteResultViewController: UIViewController {
     @IBAction func nextButtonPressed(_ sender: Any) {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
-        if(gameSetting.checkGameEnded()){
+        if(GameSetting.checkGameEnded()){
             guard let displayWinnerViewController = mainStoryboard.instantiateViewController(withIdentifier: "DisplayWinnerViewController") as? DisplayWinnerViewController else{
                 print("Couldn't find view controller")
                 return

@@ -9,22 +9,22 @@ import UIKit
 
 class DetectiveNightPhaseViewController: UIViewController {
 
-    @IBOutlet weak var PlayerSelector: UIPickerView!
-    @IBOutlet weak var SuspectTeamDisplay: UILabel!
-    @IBOutlet weak var ConfirmDecisionButton: UIButton!
+    @IBOutlet weak var playerSelector: UIPickerView!
+    @IBOutlet weak var suspectTeamDisplay: UILabel!
+    @IBOutlet weak var confirmationDecisionButton: UIButton!
     
     var selection: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        PlayerSelector.delegate = self
-        PlayerSelector.dataSource = self
-        PlayerSelector.setValue(UIColor(named: "Navy")!, forKeyPath: "textColor")
+        playerSelector.delegate = self
+        playerSelector.dataSource = self
+        playerSelector.setValue(UIColor(named: "Navy")!, forKeyPath: "textColor")
         
-        SuspectTeamDisplay.isHidden = true
+        suspectTeamDisplay.isHidden = true
         
-        ConfirmDecisionButton.titleLabel?.textAlignment = .center
+        confirmationDecisionButton.titleLabel?.textAlignment = .center
         
         checkNoDetective()
     }
@@ -35,11 +35,11 @@ class DetectiveNightPhaseViewController: UIViewController {
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         //only segue if button says next (player role already displayed
-        return (ConfirmDecisionButton.titleLabel!.text == "Next")
+        return (confirmationDecisionButton.titleLabel!.text == "Next")
     }
     
     func checkNoDetective(){
-        if(gameSetting.numOfDetective == 0){
+        if(GameSetting.numOfDetective == 0){
             let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
             guard let nurseViewController = mainStoryboard.instantiateViewController(withIdentifier: "NurseNightPhaseViewController") as? NurseNightPhaseViewController else{
                 print("Couldn't find view controller")
@@ -50,24 +50,24 @@ class DetectiveNightPhaseViewController: UIViewController {
     }
     
     @IBAction func pressedConfirmDecisionButton(_ sender: Any) {
-        if ConfirmDecisionButton.titleLabel!.text != "Confirm Your Decision"{
+        if confirmationDecisionButton.titleLabel!.text != "Confirm Your Decision"{
             return
         }
         
         //display suspect info
-        SuspectTeamDisplay.isHidden = false
-        if(gameSetting.alivePlayerList[selection].teamMafia){
-            SuspectTeamDisplay.text = "\(gameSetting.alivePlayerList[selection].name) is a Mafia"
-            SuspectTeamDisplay.textColor = UIColor(named: "Maroon")!
+        suspectTeamDisplay.isHidden = false
+        if(GameSetting.alivePlayerList[selection].teamMafia){
+            suspectTeamDisplay.text = "\(GameSetting.alivePlayerList[selection].name) is a Mafia"
+            suspectTeamDisplay.textColor = UIColor(named: "Maroon")!
         } else{
-            SuspectTeamDisplay.text = "\(gameSetting.alivePlayerList[selection].name) is not a Mafia"
-            SuspectTeamDisplay.textColor = UIColor(named: "Navy")!
+            suspectTeamDisplay.text = "\(GameSetting.alivePlayerList[selection].name) is not a Mafia"
+            suspectTeamDisplay.textColor = UIColor(named: "Navy")!
         }
         
         
         //change button text (so that it goes to next page)
-        ConfirmDecisionButton.setTitle("Next", for: .normal)
-        ConfirmDecisionButton.titleLabel?.font = UIFont(name: "Chalkboard SE", size: 20.0) //TODO: FIX
+        confirmationDecisionButton.setTitle("Next", for: .normal)
+        confirmationDecisionButton.titleLabel?.font = UIFont(name: "Chalkboard SE", size: 20.0) //TODO: FIX
     }
 
 }
@@ -75,7 +75,7 @@ class DetectiveNightPhaseViewController: UIViewController {
 //for picker view
 extension DetectiveNightPhaseViewController: UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return gameSetting.alivePlayerList[row].name
+        return GameSetting.alivePlayerList[row].name
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -89,7 +89,7 @@ extension DetectiveNightPhaseViewController: UIPickerViewDataSource{
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return gameSetting.alivePlayerList.count
+        return GameSetting.alivePlayerList.count
     }
 }
 

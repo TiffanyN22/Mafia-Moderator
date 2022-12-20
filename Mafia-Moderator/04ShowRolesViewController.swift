@@ -10,14 +10,14 @@ import UIKit
 import SwiftUI
 
 class ShowRolesViewController: UIViewController {
-    
-    @IBOutlet weak var EnterNightButton: UIButton!
+        
+    @IBOutlet weak var enterNightButton: UIButton!
     
     fileprivate let rolesCardUI = UIHostingController(rootView: ShowRolesUI())
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        EnterNightButton.tintColor = UIColor(named: "GhostlyBlue")
+        enterNightButton.tintColor = UIColor(named: "GhostlyBlue")
         
         //set up card swiftUI
         setupHC()

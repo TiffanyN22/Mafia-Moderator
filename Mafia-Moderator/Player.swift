@@ -19,7 +19,7 @@ class Player: NSObject {
     }
 }
 
-class gameSetting: NSObject {
+class GameSetting: NSObject {
     static var numOfCivilian: Int=0
     static var numOfMafia: Int=0
     static var numOfDetective: Int=0

@@ -34,7 +34,7 @@ class DiscussionViewController: UIViewController {
 
 extension DiscussionViewController: UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return gameSetting.alivePlayerList[row].name
+        return GameSetting.alivePlayerList[row].name
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -48,6 +48,6 @@ extension DiscussionViewController: UIPickerViewDataSource{
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return gameSetting.alivePlayerList.count
+        return GameSetting.alivePlayerList.count
     }
 }

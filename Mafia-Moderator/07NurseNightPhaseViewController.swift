@@ -31,12 +31,12 @@ class NurseNightPhaseViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        gameSetting.saveAttemptIndex = self.saveAttemptIndex
+        GameSetting.saveAttemptIndex = self.saveAttemptIndex
     }
     
     func checkNoNurse(){
-        if(gameSetting.numOfNurse == 0){
-            gameSetting.saveAttemptIndex = -1 //-1 means no save, impossible index
+        if(GameSetting.numOfNurse == 0){
+            GameSetting.saveAttemptIndex = -1 //-1 means no save, impossible index
             let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
             guard let nightResultStoryboard = mainStoryboard.instantiateViewController(withIdentifier: "NightResultStoryboard") as? NightResultViewController else{
                 print("Couldn't find view controller")
@@ -50,7 +50,7 @@ class NurseNightPhaseViewController: UIViewController {
 //for picker view
 extension NurseNightPhaseViewController: UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return gameSetting.alivePlayerList[row].name
+        return GameSetting.alivePlayerList[row].name
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -64,6 +64,6 @@ extension NurseNightPhaseViewController: UIPickerViewDataSource{
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return gameSetting.alivePlayerList.count
+        return GameSetting.alivePlayerList.count
     }
 }

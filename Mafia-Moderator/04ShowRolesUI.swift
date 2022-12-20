@@ -66,7 +66,7 @@ struct ShowRolesUI: View {
             Color(UIColor(named: "Maroon")!).ignoresSafeArea()
             VStack{
                 card(front: {
-                    Text("View\nyour role\n \(gameSetting.playerList[curPlayerID].name)")
+                    Text("View\nyour role\n \(GameSetting.playerList[curPlayerID].name)")
                         .font(Font.custom("Chalkboard SE Regular", size: 30))
                         .foregroundColor(Color(UIColor(named: "Navy")!))
                         .multilineTextAlignment(.center)
@@ -79,7 +79,7 @@ struct ShowRolesUI: View {
                             .foregroundColor(Color(UIColor(named: "Navy")!))
                             .multilineTextAlignment(.center)
                             .lineLimit(0)
-                        Text("\(gameSetting.playerList[curPlayerID].role)")
+                        Text("\(GameSetting.playerList[curPlayerID].role)")
                             .font(Font.custom("Chalkduster", size: 32))
                             .foregroundColor(Color(UIColor(named: fontRoleColor)!))
                             .multilineTextAlignment(.center)
@@ -104,7 +104,7 @@ struct ShowRolesUI: View {
                     })
                     
                     Button(action:{
-                        if(curPlayerID<(gameSetting.numOfPlayers-1)){
+                        if(curPlayerID<(GameSetting.numOfPlayers-1)){
                             curPlayerID += 1
                             checkRoleColor()
                         }
@@ -125,7 +125,7 @@ struct ShowRolesUI: View {
     }
     
     func checkRoleColor(){
-        switch gameSetting.playerList[curPlayerID].role{
+        switch GameSetting.playerList[curPlayerID].role{
         case "Mafia":
                 fontRoleColor="Maroon"
         case "Civilian":

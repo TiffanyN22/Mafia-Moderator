@@ -10,20 +10,20 @@ import UIKit
 
 class HomePageViewController: UIViewController {
 
-    @IBOutlet weak var TitleText: UILabel!
-    @IBOutlet weak var SubtitleText: UILabel!
-    @IBOutlet weak var PlayNowButton: UIButton!
-
+    @IBOutlet weak var titleText: UILabel!
+    @IBOutlet weak var subtitleText: UILabel!
+    @IBOutlet weak var playNowButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        TitleText.numberOfLines=0
-        TitleText.lineBreakMode = .byWordWrapping
-        TitleText.text="Mafia\nModerator"
+        titleText.numberOfLines=0
+        titleText.lineBreakMode = .byWordWrapping
+        titleText.text="Mafia\nModerator"
         
-        SubtitleText.numberOfLines=0
-        SubtitleText.text = "The ultimate game of murder and deception"
+        subtitleText.numberOfLines=0
+        subtitleText.text = "The ultimate game of murder and deception"
         
-        PlayNowButton.titleLabel?.text = "Play Now"
+        playNowButton.titleLabel?.text = "Play Now"
     }
 }

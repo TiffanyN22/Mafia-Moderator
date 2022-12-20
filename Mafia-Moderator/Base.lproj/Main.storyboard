@@ -87,9 +87,9 @@ and deception</string>
                     </view>
                     <navigationItem key="navigationItem" id="c4v-t8-GHa"/>
                     <connections>
-                        <outlet property="PlayNowButton" destination="sQd-ha-XAu" id="y8A-wi-hAc"/>
-                        <outlet property="SubtitleText" destination="wgp-rs-jk7" id="nqr-Lr-L0z"/>
-                        <outlet property="TitleText" destination="hA4-0r-fhX" id="taH-S7-B2l"/>
+                        <outlet property="playNowButton" destination="sQd-ha-XAu" id="cIx-MY-436"/>
+                        <outlet property="subtitleText" destination="wgp-rs-jk7" id="WlU-Qq-XCk"/>
+                        <outlet property="titleText" destination="hA4-0r-fhX" id="4AJ-gA-NU8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WVt-Gr-NrC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -240,17 +240,16 @@ and deception</string>
                     </view>
                     <navigationItem key="navigationItem" id="gQy-2u-YWp"/>
                     <connections>
-                        <outlet property="DoneButton" destination="r7f-Gy-l2g" id="zg1-vP-7WS"/>
-                        <outlet property="GameSettingsTitleText" destination="B5v-l9-fKi" id="RCL-jx-2xx"/>
-                        <outlet property="NumOfCivilianStepper" destination="GWk-Fa-D3t" id="PBY-PB-DAJ"/>
-                        <outlet property="NumOfDetectiveStepper" destination="bQH-3X-aJ3" id="gfZ-bg-lcg"/>
-                        <outlet property="NumOfDetectiveText" destination="y3L-nk-j0c" id="dWe-bm-fCB"/>
-                        <outlet property="NumOfMafiaStepper" destination="DG9-6r-tVC" id="r2g-Vt-wYZ"/>
-                        <outlet property="NumOfMafiaText" destination="6E1-84-gpU" id="HMI-uE-DXC"/>
-                        <outlet property="NumOfNurseStepper" destination="8AB-mm-sgn" id="I5S-Ex-JXc"/>
-                        <outlet property="NumOfNurseText" destination="73c-u4-5Oj" id="xBQ-Fe-QTp"/>
-                        <outlet property="NumofCivilianText" destination="ame-NS-JFD" id="iaz-hZ-HPS"/>
-                        <outlet property="SubtitleText" destination="9JY-xC-vpf" id="XGK-nH-ZkY"/>
+                        <outlet property="doneButton" destination="r7f-Gy-l2g" id="hZo-Ur-swC"/>
+                        <outlet property="numOfCiviliansStepper" destination="GWk-Fa-D3t" id="dw9-hk-MYA"/>
+                        <outlet property="numOfCiviliansText" destination="ame-NS-JFD" id="gc9-3o-9NW"/>
+                        <outlet property="numOfDetectivesStepper" destination="bQH-3X-aJ3" id="OkQ-He-rcr"/>
+                        <outlet property="numOfDetectivesText" destination="y3L-nk-j0c" id="6Rw-Ss-2JU"/>
+                        <outlet property="numOfMafiaStepper" destination="DG9-6r-tVC" id="90T-WS-4yu"/>
+                        <outlet property="numOfMafiaText" destination="6E1-84-gpU" id="Yid-N0-796"/>
+                        <outlet property="numOfNursesStepper" destination="8AB-mm-sgn" id="GSm-Pk-W8p"/>
+                        <outlet property="numOfNursesText" destination="73c-u4-5Oj" id="ao2-xr-Kx0"/>
+                        <outlet property="subtitleText" destination="9JY-xC-vpf" id="WXz-gq-ufq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xkX-x0-KeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -362,10 +361,10 @@ and deception</string>
                     </view>
                     <navigationItem key="navigationItem" id="orE-YY-zks"/>
                     <connections>
-                        <outlet property="AddButton" destination="H3z-2A-N5D" id="C3v-Po-0Ej"/>
-                        <outlet property="NameInput" destination="Efo-bH-lk8" id="NuG-CT-dgT"/>
-                        <outlet property="NamesList" destination="Gc1-CT-0F8" id="LVs-Gh-8F0"/>
-                        <outlet property="UndoButton" destination="AHR-QA-qqQ" id="Wzh-ss-9Wc"/>
+                        <outlet property="addButton" destination="H3z-2A-N5D" id="mlP-id-GJI"/>
+                        <outlet property="nameInput" destination="Efo-bH-lk8" id="1Et-0P-mig"/>
+                        <outlet property="namesList" destination="Gc1-CT-0F8" id="P7R-Tt-bnY"/>
+                        <outlet property="undoButton" destination="AHR-QA-qqQ" id="WYl-b9-s4b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2T-Bo-cDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -427,7 +426,7 @@ and deception</string>
                     </view>
                     <navigationItem key="navigationItem" id="3LC-kU-GL5"/>
                     <connections>
-                        <outlet property="EnterNightButton" destination="Ell-oH-5IN" id="zkt-HD-UcV"/>
+                        <outlet property="enterNightButton" destination="Ell-oH-5IN" id="dxX-nH-uGe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPo-Gi-nqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -495,7 +494,7 @@ and deception</string>
                     </view>
                     <navigationItem key="navigationItem" id="JC8-GX-mxn"/>
                     <connections>
-                        <outlet property="ConfirmDecisionButton" destination="qSQ-ip-oRf" id="Se8-7M-kWh"/>
+                        <outlet property="confirmDecisionButton" destination="qSQ-ip-oRf" id="ezL-0k-Mq6"/>
                         <outlet property="mafiaPlayerSelector" destination="BNU-Cv-hFl" id="p8A-OZ-n3R"/>
                     </connections>
                 </viewController>
@@ -578,9 +577,9 @@ and deception</string>
                     </view>
                     <navigationItem key="navigationItem" id="Auc-U2-OOT"/>
                     <connections>
-                        <outlet property="ConfirmDecisionButton" destination="tgO-8p-JXn" id="PJH-KI-ri1"/>
-                        <outlet property="PlayerSelector" destination="PNS-Fp-nQ8" id="OLe-gg-DL9"/>
-                        <outlet property="SuspectTeamDisplay" destination="CAX-Cu-vgP" id="lop-lY-H8g"/>
+                        <outlet property="confirmationDecisionButton" destination="tgO-8p-JXn" id="3yQ-70-Etq"/>
+                        <outlet property="playerSelector" destination="PNS-Fp-nQ8" id="6bW-y0-KJv"/>
+                        <outlet property="suspectTeamDisplay" destination="CAX-Cu-vgP" id="8XV-NW-o2S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DTM-VP-pC2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

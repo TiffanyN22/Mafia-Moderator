@@ -10,7 +10,7 @@ import UIKit
 class MafiaNightPhaseViewController: UIViewController{
 
     @IBOutlet weak var mafiaPlayerSelector: UIPickerView!
-    @IBOutlet weak var ConfirmDecisionButton: UIButton!
+    @IBOutlet weak var confirmDecisionButton: UIButton!
     
     var murderAttemptIndex: Int = 0 //selector starts off at position 0
 
@@ -21,9 +21,9 @@ class MafiaNightPhaseViewController: UIViewController{
         mafiaPlayerSelector.dataSource = self
         mafiaPlayerSelector.setValue(UIColor(named: "Maroon")!, forKeyPath: "textColor")
         
-        ConfirmDecisionButton.tintColor = UIColor(named: "CyanAccent")
-        ConfirmDecisionButton.titleLabel?.text = "Confirm Your Decision"
-        ConfirmDecisionButton.titleLabel?.textAlignment = .center
+        confirmDecisionButton.tintColor = UIColor(named: "CyanAccent")
+        confirmDecisionButton.titleLabel?.text = "Confirm Your Decision"
+        confirmDecisionButton.titleLabel?.textAlignment = .center
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -31,14 +31,14 @@ class MafiaNightPhaseViewController: UIViewController{
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        gameSetting.murderAttemptIndex = self.murderAttemptIndex
+        GameSetting.murderAttemptIndex = self.murderAttemptIndex
     }
 }
 
 //for picker view
 extension MafiaNightPhaseViewController: UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return gameSetting.alivePlayerList[row].name
+        return GameSetting.alivePlayerList[row].name
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -52,6 +52,6 @@ extension MafiaNightPhaseViewController: UIPickerViewDataSource{
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return gameSetting.alivePlayerList.count
+        return GameSetting.alivePlayerList.count
     }
 }
