@@ -447,7 +447,7 @@ and deception</string>
                                 <color key="textColor" name="GhostlyBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wake up, look around you, and select the person who will soon become your first victim" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6Q-oR-e2W">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wake up, look around you, and select the person who will soon become your next victim" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6Q-oR-e2W">
                                 <rect key="frame" x="34" y="169" width="325" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="0N5-Oi-7IS"/>
